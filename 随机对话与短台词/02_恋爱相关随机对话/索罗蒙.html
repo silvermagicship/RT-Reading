@@ -15,6 +15,13 @@
       <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
     </div>
   </header>
+  <div class="reader-tools" aria-label="阅读字号">
+    <div class="reader-scale-control">
+      <button type="button" data-scale-down aria-label="减小字号">A-</button>
+      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
+      <button type="button" data-scale-up aria-label="放大字号">A+</button>
+    </div>
+  </div>
   <main class="reader">
     <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html">上一页</a><a href="%E7%BB%AE%E8%B4%9D%E6%8B%89.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99">索罗蒙</a></li><li class="toc-level-2"><a href="#%E5%8F%91%E8%B5%B7">发起</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C">索罗蒙 -&gt; 海因里希</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E5%A9%95%E4%BC%8A">索罗蒙 -&gt; 婕伊</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C-2">索罗蒙 -&gt; 海因里希</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E7%8E%9B%E6%8B%89%E6%96%8B">索罗蒙 -&gt; 玛拉斋</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E7%BB%AE%E8%B4%9D%E6%8B%89">索罗蒙 -&gt; 绮贝拉</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E4%BC%8A%E8%8E%89%E8%80%B6%E7%89%B9">索罗蒙 -&gt; 伊莉耶特</a></li><li class="toc-level-3"><a href="#%E7%B4%A2%E7%BD%97%E8%92%99---%E5%8D%A1%E8%A5%BF%E5%A8%85">索罗蒙 -&gt; 卡西娅</a></li><li class="toc-level-2"><a href="#%E5%9B%9E%E5%BA%94">回应</a></li><li class="toc-level-3"><a href="#%E9%98%BF%E8%B4%9D%E6%8B%89%E5%BE%B7---%E7%B4%A2%E7%BD%97%E8%92%99%E4%BC%8A%E8%BF%AA%E6%8B%89">阿贝拉德 -&gt; 索罗蒙、伊迪拉</a></li><li class="toc-level-3"><a href="#%E5%B8%95%E6%96%AF%E5%8D%A1---%E7%B4%A2%E7%BD%97%E8%92%99%E4%BC%8A%E8%8E%89%E8%80%B6%E7%89%B9">帕斯卡 -&gt; 索罗蒙、伊莉耶特</a></li><li class="toc-level-3"><a href="#%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C---%E9%98%BF%E8%B4%9D%E6%8B%89%E5%BE%B7%E4%BC%8A%E8%8E%89%E8%80%B6%E7%89%B9%E7%B4%A2%E7%BD%97%E8%92%99">海因里希 -&gt; 阿贝拉德、伊莉耶特、索罗蒙</a></li><li class="toc-level-3"><a href="#%E7%8E%9B%E6%8B%89%E6%96%8B---%E5%A9%95%E4%BC%8A%E4%BC%8A%E8%BF%AA%E6%8B%89%E7%B4%A2%E7%BD%97%E8%92%99">玛拉斋 -&gt; 婕伊、伊迪拉、索罗蒙</a></li><li class="toc-level-3"><a href="#%E5%8D%A1%E8%A5%BF%E5%A8%85---%E7%8E%9B%E6%8B%89%E6%96%8B%E7%B4%A2%E7%BD%97%E8%92%99">卡西娅 -&gt; 玛拉斋、索罗蒙</a></li></ol></details>
@@ -28,14 +35,14 @@
 <p>_触发提示：第4章；DLC2 / DLC2+MainGame / Romances / Heinrix_JealousyBroken_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“我们法务部有这么一句话，审讯官大师——就算第一枪打偏了，也还有剩下的子弹呢。”</li>
-<li>English: "You know, we have a saying, Master Interrogator: if you miss your first shot, there are always other rounds in the magazine."</li>
+<li>“我们法务部有这么一句话，审讯官大师——就算第一枪打偏了，也还有剩下的子弹呢。”</li>
+<li><span class="en">"You know, we have a saying, Master Interrogator: if you miss your first shot, there are always other rounds in the magazine."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>海因里希 | <a href="%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C.html#b0676-1-to-Heinrix">跳到海因里希视图</a></li>
-<li>中文：“我认为，没必要在打过的靶子上继续浪费子弹。”</li>
-<li>English: "I see no point in wasting ammunition on a previously confronted target."</li>
+<li>“我认为，没必要在打过的靶子上继续浪费子弹。”</li>
+<li><span class="en">"I see no point in wasting ammunition on a previously confronted target."</span></li>
 </ul>
 <span id="b0677-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---婕伊">索罗蒙 -&gt; 婕伊</h3>
@@ -43,14 +50,14 @@
 <p>_触发提示：第2章；DLC2 / DLC2+MainGame / Romances / Jae_FirstStage_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“你是真的很想成为我的眼中钉，对不对，小贩？要控制住你的贪婪。行商浪人已经给了你庇护，别再得寸进尺了。”</li>
-<li>English: "You want to be a real thorn in my side, don't you, peddler? Learn to keep your greed in check. The Rogue Trader has already granted you protection — do not demand anything more."</li>
+<li>“你是真的很想成为我的眼中钉，对不对，小贩？要控制住你的贪婪。行商浪人已经给了你庇护，别再得寸进尺了。”</li>
+<li><span class="en">"You want to be a real thorn in my side, don't you, peddler? Learn to keep your greed in check. The Rogue Trader has already granted you protection — do not demand anything more."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>婕伊 | <a href="%E5%A9%95%E4%BC%8A.html#b0677-1-to-Jae">跳到婕伊视图</a></li>
-<li>中文：“你是打算把我吓跑吗，法务官？这可太糟糕了。你扪心自问，是选择冰冷的头脑，还是选择炽热的心灵？答案一目了然。”</li>
-<li>English: "Trying to scare me off, are you, lawman? That's too bad. You see, between the coldness of the mind and the heat of a living heart, the choice is simple."</li>
+<li>“你是打算把我吓跑吗，法务官？这可太糟糕了。你扪心自问，是选择冰冷的头脑，还是选择炽热的心灵？答案一目了然。”</li>
+<li><span class="en">"Trying to scare me off, are you, lawman? That's too bad. You see, between the coldness of the mind and the heat of a living heart, the choice is simple."</span></li>
 </ul>
 <span id="b0678-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---海因里希-2">索罗蒙 -&gt; 海因里希</h3>
@@ -58,14 +65,14 @@
 <p>_触发提示：第4章；DLC2 / DLC2+MainGame / Romances / Jealousy_HeinrixSol_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“审讯官大师，我不得不直接问你这个问题：你与行商浪人之间是否存在某种非公务方面的关系？”</li>
-<li>English: "Master Interrogator, I am forced to ask you directly: are you engaged in an off-duty relationship with the Rogue Trader?"</li>
+<li>“审讯官大师，我不得不直接问你这个问题：你与行商浪人之间是否存在某种非公务方面的关系？”</li>
+<li><span class="en">"Master Interrogator, I am forced to ask you directly: are you engaged in an off-duty relationship with the Rogue Trader?"</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>海因里希 | <a href="%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C.html#b0678-1-to-Heinrix">跳到海因里希视图</a></li>
-<li>中文：“这个说法还真是有趣。你说你‘不得不’问我，是吗？那是什么迫使你‘不得不’这么做呢？是你无聊的好奇心？还是情感方面的不安全感？这两者都不适合你。”</li>
-<li>English: "An interesting way to put it. Forced, you say? What is forcing you, Solomorne? Is it idle curiosity or emotional insecurity? Neither suits you."</li>
+<li>“这个说法还真是有趣。你说你‘不得不’问我，是吗？那是什么迫使你‘不得不’这么做呢？是你无聊的好奇心？还是情感方面的不安全感？这两者都不适合你。”</li>
+<li><span class="en">"An interesting way to put it. Forced, you say? What is forcing you, Solomorne? Is it idle curiosity or emotional insecurity? Neither suits you."</span></li>
 </ul>
 <span id="b0679-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---玛拉斋">索罗蒙 -&gt; 玛拉斋</h3>
@@ -73,14 +80,14 @@
 <p>_触发提示：第4章；DLC2 / DLC2+MainGame / Romances / Jealousy_MarazhaiSol_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“你这场游戏该结束了，异形。行商浪人和你不是一路人，{mf|他|她}也永远都不会和你成为一路人。”</li>
-<li>English: "Desist from your games, xenos. The Rogue Trader is nothing like you. And {mf|he|she} will never be."</li>
+<li>“你这场游戏该结束了，异形。行商浪人和你不是一路人，{mf|他|她}也永远都不会和你成为一路人。”</li>
+<li><span class="en">"Desist from your games, xenos. The Rogue Trader is nothing like you. And {mf|he|she} will never be."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>玛拉斋 | <a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html#b0679-1-to-Marazhai">跳到玛拉斋视图</a></li>
-<li>中文：“是啊，很遗憾，因为你们猴子存在着方方面面的限制。但即便如此，{mf|他|她}也在一次次尝试，这一切都是为了取悦我。”</li>
-<li>English: "Yes, your mon-keigh limitations are unfortunate. But that does not stop {mf|him|her} from trying again and again — all for a chance to please me."</li>
+<li>“是啊，很遗憾，因为你们猴子存在着方方面面的限制。但即便如此，{mf|他|她}也在一次次尝试，这一切都是为了取悦我。”</li>
+<li><span class="en">"Yes, your mon-keigh limitations are unfortunate. But that does not stop {mf|him|her} from trying again and again — all for a chance to please me."</span></li>
 </ul>
 <span id="b0680-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---绮贝拉">索罗蒙 -&gt; 绮贝拉</h3>
@@ -88,14 +95,14 @@
 <p>_触发提示：第1章至第4章；DLC2 / DLC2+MainGame / Romances / Kibellah_FirstStage_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“坚盾、影子、利刃，接下来呢？是宠妾吗？你是一件听话的武器，而你渴望占据的这个位置，根本不是仆人应当觊觎的位置。”</li>
-<li>English: "Shield, shadow, blade, and now what else — a favourite? For an obedient weapon, you are too set on taking a place not fit for a servant."</li>
+<li>“坚盾、影子、利刃，接下来呢？是宠妾吗？你是一件听话的武器，而你渴望占据的这个位置，根本不是仆人应当觊觎的位置。”</li>
+<li><span class="en">"Shield, shadow, blade, and now what else — a favourite? For an obedient weapon, you are too set on taking a place not fit for a servant."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>绮贝拉 | <a href="%E7%BB%AE%E8%B4%9D%E6%8B%89.html#b0680-1-to-Kibellah">跳到绮贝拉视图</a></li>
-<li>中文：“你这么说是出于对秘者的关心。你不希望{mf|他|她}亲近卑劣的人，你想把可能会背叛{mf|他|她}、欺骗{mf|他|她}的人挡在门外。正因如此，尽管你的话语玷污了我们神圣的纽带，但我仍愿原谅你。”</li>
-<li>English: "You speak out of concern for the Domin. You do not want {mf|him|her} to grow close to someone unworthy. Someone who might betray or deceive. That is why I forgive your words that besmirch our sacred bond."</li>
+<li>“你这么说是出于对秘者的关心。你不希望{mf|他|她}亲近卑劣的人，你想把可能会背叛{mf|他|她}、欺骗{mf|他|她}的人挡在门外。正因如此，尽管你的话语玷污了我们神圣的纽带，但我仍愿原谅你。”</li>
+<li><span class="en">"You speak out of concern for the Domin. You do not want {mf|him|her} to grow close to someone unworthy. Someone who might betray or deceive. That is why I forgive your words that besmirch our sacred bond."</span></li>
 </ul>
 <span id="b0681-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---伊莉耶特">索罗蒙 -&gt; 伊莉耶特</h3>
@@ -103,14 +110,14 @@
 <p>_触发提示：第2章；DLC2 / DLC2+MainGame / Romances / Yrliet_FirstStage_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“你不过是件心血来潮的玩物罢了。那位行商浪人刚刚上台，而你不过是个充满异域风情的消遣而已，摆正你自己的位置。”</li>
-<li>English: "You are nothing but a passing diversion, a dubious exotic for a Rogue Trader who only recently came to power. Know your place."</li>
+<li>“你不过是件心血来潮的玩物罢了。那位行商浪人刚刚上台，而你不过是个充满异域风情的消遣而已，摆正你自己的位置。”</li>
+<li><span class="en">"You are nothing but a passing diversion, a dubious exotic for a Rogue Trader who only recently came to power. Know your place."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>伊莉耶特 | <a href="%E4%BC%8A%E8%8E%89%E8%80%B6%E7%89%B9.html#b0681-1-to-Yrliet">跳到伊莉耶特视图</a></li>
-<li>中文：“外界人知道你对{mf|他|她}的选择有什么看法吗？噢，我明白了，你没有勇气当着{mf|他|她}的面说出来，所以你打算把这些话说给别人听。不过，我根本不在意你的废话。”</li>
-<li>English: "Does the elantach know what you think of {mf|his|her} decisions? Oh, I see. You lack the courage to say it to {mf|his|her} face, so you have chosen a different quarry. But I am indifferent to the rot of your words."</li>
+<li>“外界人知道你对{mf|他|她}的选择有什么看法吗？噢，我明白了，你没有勇气当着{mf|他|她}的面说出来，所以你打算把这些话说给别人听。不过，我根本不在意你的废话。”</li>
+<li><span class="en">"Does the elantach know what you think of {mf|his|her} decisions? Oh, I see. You lack the courage to say it to {mf|his|her} face, so you have chosen a different quarry. But I am indifferent to the rot of your words."</span></li>
 </ul>
 <span id="b0682-1-from" class="anchor-target"></span>
 <h3 id="索罗蒙---卡西娅">索罗蒙 -&gt; 卡西娅</h3>
@@ -118,14 +125,14 @@
 <p>_触发提示：第4章；DLC2 / DLC2+MainGame / Romances / Yrliet_Traitor_DLC2_</p>
 <p><strong>发起：索罗蒙</strong></p>
 <ul>
-<li>中文：“一边是行商浪人，一边是背后捅刀的异形，她究竟是凭什么活下来的？怎么还能成为行商浪人身边的核心成员？我真的无法理解到底发生了什么事情。就算现在天塌下来了，我也不会像这样不明所以。”</li>
-<li>English: "A Rogue Trader and a backstabbing xenos. How did she earn the right to live and be included in the Rogue Trader's inner circle? I simply refuse to understand what is going on. Even if the sky were to fall on our heads, I would not be as confused as I am now."</li>
+<li>“一边是行商浪人，一边是背后捅刀的异形，她究竟是凭什么活下来的？怎么还能成为行商浪人身边的核心成员？我真的无法理解到底发生了什么事情。就算现在天塌下来了，我也不会像这样不明所以。”</li>
+<li><span class="en">"A Rogue Trader and a backstabbing xenos. How did she earn the right to live and be included in the Rogue Trader's inner circle? I simply refuse to understand what is going on. Even if the sky were to fall on our heads, I would not be as confused as I am now."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>卡西娅 | <a href="%E5%8D%A1%E8%A5%BF%E5%A8%85.html#b0682-1-to-Cassia">跳到卡西娅视图</a></li>
-<li>中文：“对舰长大人而言，伊莉耶特既不是消遣，也不是错误。她是某种……更特别的存在，我怀疑我们恐怕永远都无法理解。”</li>
-<li>English: "To the Lord Captain, Yrliet is not a habit or a mistake. She is... something more. I doubt we will ever be able to understand them."</li>
+<li>“对舰长大人而言，伊莉耶特既不是消遣，也不是错误。她是某种……更特别的存在，我怀疑我们恐怕永远都无法理解。”</li>
+<li><span class="en">"To the Lord Captain, Yrliet is not a habit or a mistake. She is... something more. I doubt we will ever be able to understand them."</span></li>
 </ul>
 <h2 id="回应">回应</h2>
 <span id="b0710-1-to-Solomorne" class="anchor-target"></span>
@@ -134,19 +141,19 @@
 <p>_触发提示：第4章；DLC2 / Romance_Sol / Sol_Janitor_DLC2_</p>
 <p><strong>发起：阿贝拉德</strong></p>
 <ul>
-<li>中文：“我最近没怎么在舰桥上见过你，监察官。你是不是在负责某些重要的任务？”</li>
-<li>English: "I have not seen you around the bridge lately, Proctor. Were you preoccupied with some crucial tasks?"</li>
+<li>“我最近没怎么在舰桥上见过你，监察官。你是不是在负责某些重要的任务？”</li>
+<li><span class="en">"I have not seen you around the bridge lately, Proctor. Were you preoccupied with some crucial tasks?"</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>索罗蒙 | <a href="%E9%98%BF%E8%B4%9D%E6%8B%89%E5%BE%B7.html#b0710-1-from">跳到阿贝拉德视图</a></li>
-<li>中文：“请放心，我目前正在这艘船上履行重要职责，我会全力以赴完成我的使命。”</li>
-<li>English: "Rest assured, my present duties on this ship matter, and I am fully dedicated to performing them well."</li>
+<li>“请放心，我目前正在这艘船上履行重要职责，我会全力以赴完成我的使命。”</li>
+<li><span class="en">"Rest assured, my present duties on this ship matter, and I am fully dedicated to performing them well."</span></li>
 </ul>
 <ul>
 <li>伊迪拉 | <a href="%E9%98%BF%E8%B4%9D%E6%8B%89%E5%BE%B7.html#b0710-1-from">跳到阿贝拉德视图</a></li>
-<li>中文：“你看看你，你的话简直就像是从那个可怜人身上踩过去一样。我还以为不长心的人只有泼冷水大师一个呢。”</li>
-<li>English: "Look at you walk all over the poor man. And here I thought our killjoy was the one without a heart."</li>
+<li>“你看看你，你的话简直就像是从那个可怜人身上踩过去一样。我还以为不长心的人只有泼冷水大师一个呢。”</li>
+<li><span class="en">"Look at you walk all over the poor man. And here I thought our killjoy was the one without a heart."</span></li>
 </ul>
 <span id="b0711-1-to-Solomorne" class="anchor-target"></span>
 <h3 id="帕斯卡---索罗蒙伊莉耶特">帕斯卡 -&gt; 索罗蒙、伊莉耶特</h3>
@@ -154,19 +161,19 @@
 <p>_触发提示：第4章；DLC2 / Romance_Sol / Sol_JealousyBroken_DLC2_</p>
 <p><strong>发起：帕斯卡</strong></p>
 <ul>
-<li>中文：“检测到非常严重的情绪困扰，降低了索罗蒙这一单位的效率。我提议实施全套非侵入性措施，以此稳定我的战友，提高其效率表现。”</li>
-<li>English: "I am registering a deep emotional disturbance that is hampering the performance of the unit Solomorne. I propose a set of non-invasive measures with the aim of stabilising my comrade."</li>
+<li>“检测到非常严重的情绪困扰，降低了索罗蒙这一单位的效率。我提议实施全套非侵入性措施，以此稳定我的战友，提高其效率表现。”</li>
+<li><span class="en">"I am registering a deep emotional disturbance that is hampering the performance of the unit Solomorne. I propose a set of non-invasive measures with the aim of stabilising my comrade."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>索罗蒙 | <a href="%E5%B8%95%E6%96%AF%E5%8D%A1.html#b0711-1-from">跳到帕斯卡视图</a></li>
-<li>中文：“你的面甲恐怕是出问题了，帕斯卡。你在胡思乱想，我一点事情都没有。”</li>
-<li>English: "Something must be wrong with your visors, Pasqal — you are imagining things. I am perfectly fine."</li>
+<li>“你的面甲恐怕是出问题了，帕斯卡。你在胡思乱想，我一点事情都没有。”</li>
+<li><span class="en">"Something must be wrong with your visors, Pasqal — you are imagining things. I am perfectly fine."</span></li>
 </ul>
 <ul>
 <li>伊莉耶特 | <a href="%E5%B8%95%E6%96%AF%E5%8D%A1.html#b0711-1-from">跳到帕斯卡视图</a></li>
-<li>中文：“允许他为失去的东西哀悼吧，铁猴子。他不该压抑内心的声音，只有真正接纳了自己的痛苦，才能继续前进。”</li>
-<li>English: "Let him mourn the things he has lost, iron mon-keigh. He should not smother the voice of his heart. Only after accepting one's pain can one move forward."</li>
+<li>“允许他为失去的东西哀悼吧，铁猴子。他不该压抑内心的声音，只有真正接纳了自己的痛苦，才能继续前进。”</li>
+<li><span class="en">"Let him mourn the things he has lost, iron mon-keigh. He should not smother the voice of his heart. Only after accepting one's pain can one move forward."</span></li>
 </ul>
 <span id="b0773-1-to-Solomorne" class="anchor-target"></span>
 <h3 id="海因里希---阿贝拉德伊莉耶特索罗蒙">海因里希 -&gt; 阿贝拉德、伊莉耶特、索罗蒙</h3>
@@ -174,24 +181,24 @@
 <p>_触发提示：第2章；Romances / Cassia / CassiaAfter1Event2_</p>
 <p><strong>发起：海因里希</strong></p>
 <ul>
-<li>中文：“暗送秋波，行屈膝礼，甚至馈赠永生花……我已经很久都没见过有人如此恭敬地恪守贵族的求爱仪式了。多么虔诚的心意。”</li>
-<li>English: "Curtsies, eloquent glances, even an immortalium... It has been a long time since I saw anyone observe the aristocratic rules of courtship. And so devotedly at that."</li>
+<li>“暗送秋波，行屈膝礼，甚至馈赠永生花……我已经很久都没见过有人如此恭敬地恪守贵族的求爱仪式了。多么虔诚的心意。”</li>
+<li><span class="en">"Curtsies, eloquent glances, even an immortalium... It has been a long time since I saw anyone observe the aristocratic rules of courtship. And so devotedly at that."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>阿贝拉德 | <a href="%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C.html#b0773-1-from">跳到海因里希视图</a></li>
-<li>中文：“冯·卡洛克斯，你要把这些也写进报告里吗？你可真是既无羞耻，也无良知。如果你胆敢让卡西娅女士感到不快，群星在上，我保证你会后悔的。”</li>
-<li>English: "Will you be putting that in your reports too, van Calox? You are without shame or conscience. If you dare upset Lady Cassia, by the stars, I will make sure you regret it."</li>
+<li>“冯·卡洛克斯，你要把这些也写进报告里吗？你可真是既无羞耻，也无良知。如果你胆敢让卡西娅女士感到不快，群星在上，我保证你会后悔的。”</li>
+<li><span class="en">"Will you be putting that in your reports too, van Calox? You are without shame or conscience. If you dare upset Lady Cassia, by the stars, I will make sure you regret it."</span></li>
 </ul>
 <ul>
 <li>伊莉耶特 | <a href="%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C.html#b0773-1-from">跳到海因里希视图</a></li>
-<li>中文：“外界人与纱芮尔先知的仪式……丝毫没有沾染猴子们粗鄙无知的习气。欣赏这样的情感激荡，几乎让我感到享受。”</li>
-<li>English: "The rituals that the elantach and the Sha'eil seer are performing... they contain none of the savagery for which mon-keigh are known. I am almost enjoying watching their senses blossom."</li>
+<li>“外界人与纱芮尔先知的仪式……丝毫没有沾染猴子们粗鄙无知的习气。欣赏这样的情感激荡，几乎让我感到享受。”</li>
+<li><span class="en">"The rituals that the elantach and the Sha'eil seer are performing... they contain none of the savagery for which mon-keigh are known. I am almost enjoying watching their senses blossom."</span></li>
 </ul>
 <ul>
 <li>索罗蒙 | <a href="%E6%B5%B7%E5%9B%A0%E9%87%8C%E5%B8%8C.html#b0773-1-from">跳到海因里希视图</a></li>
-<li>中文：“或许我永远都无法理解贵族老爷、女士之间的仪式，但我看到了严格遵守礼仪的美感。”</li>
-<li>English: "I may never understand the rituals of highborn lords and ladies, but I see a certain beauty in everything following strict protocol."</li>
+<li>“或许我永远都无法理解贵族老爷、女士之间的仪式，但我看到了严格遵守礼仪的美感。”</li>
+<li><span class="en">"I may never understand the rituals of highborn lords and ladies, but I see a certain beauty in everything following strict protocol."</span></li>
 </ul>
 <span id="b0788-1-to-Solomorne" class="anchor-target"></span>
 <h3 id="玛拉斋---婕伊伊迪拉索罗蒙">玛拉斋 -&gt; 婕伊、伊迪拉、索罗蒙</h3>
@@ -199,24 +206,24 @@
 <p>_触发提示：第4章；Romances / Jae / JealousyBroken1_</p>
 <p><strong>发起：玛拉斋</strong></p>
 <ul>
-<li>中文：“嗯嗯，多么有趣的味道啊。这是因为行商浪人，没错吧？我分不清这究竟是被掐灭的爱火……或只是单纯的嫉妒？你希望我替你卸下这些重担吗？”</li>
-<li>English: "Mmm, what an interesting bouquet. This is because of the Rogue Trader, isn't it? I cannot discern which it is... strangled ambition or simple jealousy? Would you like me to help unburden you?"</li>
+<li>“嗯嗯，多么有趣的味道啊。这是因为行商浪人，没错吧？我分不清这究竟是被掐灭的爱火……或只是单纯的嫉妒？你希望我替你卸下这些重担吗？”</li>
+<li><span class="en">"Mmm, what an interesting bouquet. This is because of the Rogue Trader, isn't it? I cannot discern which it is... strangled ambition or simple jealousy? Would you like me to help unburden you?"</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>婕伊 | <a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html#b0788-1-from">跳到玛拉斋视图</a></li>
-<li>中文：“在看到那群竞技场的巫灵如何与你‘嬉戏’之后，我恐怕没这个胃口了。”</li>
-<li>English: "After seeing how the Wyches of the arena used you, I'm afraid I don't have the stomach for it."</li>
+<li>“在看到那群竞技场的巫灵如何与你‘嬉戏’之后，我恐怕没这个胃口了。”</li>
+<li><span class="en">"After seeing how the Wyches of the arena used you, I'm afraid I don't have the stomach for it."</span></li>
 </ul>
 <ul>
 <li>伊迪拉 | <a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html#b0788-1-from">跳到玛拉斋视图</a></li>
-<li>中文：“别满嘴喷粪了，你这让人恶心的豆芽怪胎。我建议你立刻闭紧你那张臭嘴，你没被人绞死就算你运气好。”</li>
-<li>English: "You spout a lot of dangerous groxshit, you gangly creep, but you definitely should have kept your mouth shut this time. You'll be lucky if you don't end up strangled."</li>
+<li>“别满嘴喷粪了，你这让人恶心的豆芽怪胎。我建议你立刻闭紧你那张臭嘴，你没被人绞死就算你运气好。”</li>
+<li><span class="en">"You spout a lot of dangerous groxshit, you gangly creep, but you definitely should have kept your mouth shut this time. You'll be lucky if you don't end up strangled."</span></li>
 </ul>
 <ul>
 <li>索罗蒙 | <a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html#b0788-1-from">跳到玛拉斋视图</a></li>
-<li>中文：“如果你打算满足你的变态欲望，那我劝你赶紧滚远点。这个小贩可能确实一只脚跨过了异端的红线，但她绝不会成为你的食粮。”</li>
-<li>English: "If you are looking to satisfy your perverse needs — then get lost and do it elsewhere. The peddler may have one foot planted in heresy, but she will not serve as your food."</li>
+<li>“如果你打算满足你的变态欲望，那我劝你赶紧滚远点。这个小贩可能确实一只脚跨过了异端的红线，但她绝不会成为你的食粮。”</li>
+<li><span class="en">"If you are looking to satisfy your perverse needs — then get lost and do it elsewhere. The peddler may have one foot planted in heresy, but she will not serve as your food."</span></li>
 </ul>
 <span id="b0797-1-to-Solomorne" class="anchor-target"></span>
 <h3 id="卡西娅---玛拉斋索罗蒙">卡西娅 -&gt; 玛拉斋、索罗蒙</h3>
@@ -224,19 +231,19 @@
 <p>_触发提示：Romances / Marazhai / After1Event2_</p>
 <p><strong>发起：卡西娅</strong></p>
 <ul>
-<li>中文：“每当玛拉斋从人群中走过时，甲板上就会笼罩着不安的黄色与惊恐的绿色……可现在，当舰长大人出现在舰桥上时，甲板上也弥漫着这种颜色。这样的变化……让我感到害怕。”</li>
-<li>English: "The decks of the ship were enveloped in alarming yellow and terrified green whenever Marazhai walked among the crew... but now the same colours flood my gaze when the Lord Captain appears on the bridge. I am... frightened by this change."</li>
+<li>“每当玛拉斋从人群中走过时，甲板上就会笼罩着不安的黄色与惊恐的绿色……可现在，当舰长大人出现在舰桥上时，甲板上也弥漫着这种颜色。这样的变化……让我感到害怕。”</li>
+<li><span class="en">"The decks of the ship were enveloped in alarming yellow and terrified green whenever Marazhai walked among the crew... but now the same colours flood my gaze when the Lord Captain appears on the bridge. I am... frightened by this change."</span></li>
 </ul>
 <p><strong>回应</strong></p>
 <ul>
 <li>玛拉斋 | <a href="%E5%8D%A1%E8%A5%BF%E5%A8%85.html#b0797-1-from">跳到卡西娅视图</a></li>
-<li>中文：“那些牲口已经开始明白自己的位置了，很好。”</li>
-<li>English: "The cattle are quickly learning their place. Good."</li>
+<li>“那些牲口已经开始明白自己的位置了，很好。”</li>
+<li><span class="en">"The cattle are quickly learning their place. Good."</span></li>
 </ul>
 <ul>
 <li>索罗蒙 | <a href="%E5%8D%A1%E8%A5%BF%E5%A8%85.html#b0797-1-from">跳到卡西娅视图</a></li>
-<li>中文：“坚强起来，导航者女士。那个渣滓想让你怕他，不要让他得逞。”</li>
-<li>English: "Steel yourself, Lady Navigator. The miscreant wants you to fear him — do not grant him that pleasure."</li>
+<li>“坚强起来，导航者女士。那个渣滓想让你怕他，不要让他得逞。”</li>
+<li><span class="en">"Steel yourself, Lady Navigator. The miscreant wants you to fear him — do not grant him that pleasure."</span></li>
 </ul>
     </article>
     <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E7%8E%9B%E6%8B%89%E6%96%8B.html">上一页</a><a href="%E7%BB%AE%E8%B4%9D%E6%8B%89.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
@@ -249,6 +256,6 @@
       <div class="search-results" data-search-results></div>
     </div>
   </div>
-  <script src="../../assets/search.js" defer></script>
+  <script src="../../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

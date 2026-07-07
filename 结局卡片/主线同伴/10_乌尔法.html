@@ -15,6 +15,13 @@
       <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
     </div>
   </header>
+  <div class="reader-tools" aria-label="阅读字号">
+    <div class="reader-scale-control">
+      <button type="button" data-scale-down aria-label="减小字号">A-</button>
+      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
+      <button type="button" data-scale-up aria-label="放大字号">A+</button>
+    </div>
+  </div>
   <main class="reader">
     <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="09_%E7%8E%9B%E6%8B%89%E6%96%8B.html">上一页</a><a href="11_%E7%BB%AE%E8%B4%9D%E6%8B%89.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E4%B9%8C%E5%B0%94%E6%B3%95%E7%BB%93%E5%B1%80%E5%8D%A1%E7%89%87">乌尔法结局卡片</a></li><li class="toc-level-2"><a href="#%E6%9C%AC%E9%A1%B5%E7%B4%A2%E5%BC%95">本页索引</a></li><li class="toc-level-2"><a href="#%E4%B9%8C%E5%B0%94%E6%B3%95%E5%B0%94-ulfar-char-ulfar">乌尔法尔 / Ulfar ^char-ulfar</a></li><li class="toc-level-3"><a href="#%E4%B9%8C%E5%B0%94%E6%B3%95%E5%88%A4%E5%AE%9A%E6%9D%A1%E4%BB%B6%E8%A1%A5%E5%85%85-cond-ulfar">乌尔法判定条件补充 ^cond-ulfar</a></li><li class="toc-level-3"><a href="#%E5%85%B3%E8%81%94%E7%BB%84-01-ulfar-group-01">关联组 01 ^ulfar-group-01</a></li><li class="toc-level-3"><a href="#%E5%85%B3%E8%81%94%E7%BB%84-02-ulfar-group-02">关联组 02 ^ulfar-group-02</a></li><li class="toc-level-3"><a href="#%E5%85%B3%E8%81%94%E7%BB%84-03-ulfar-group-03">关联组 03 ^ulfar-group-03</a></li><li class="toc-level-3"><a href="#%E5%85%B3%E8%81%94%E7%BB%84-04-ulfar-group-04">关联组 04 ^ulfar-group-04</a></li><li class="toc-level-3"><a href="#%E5%85%B3%E8%81%94%E7%BB%84-05-ulfar-group-05">关联组 05 ^ulfar-group-05</a></li></ol></details>
@@ -35,7 +42,7 @@
 <li><a href="#sec-005">关联组 04</a></li>
 <li><a href="#sec-006">关联组 05</a></li>
 </ul>
-<p>---</p>
+<hr class="scene-break">
 <h2 id="乌尔法尔-ulfar-char-ulfar">乌尔法尔 / Ulfar ^char-ulfar</h2>
 <ul>
 <li>返回：[[rogue_trader_endings_by_character_obsidian#^character-index|角色索引]] · [[rogue_trader_endings_by_character_obsidian#^idx-ulfar|当前角色索引]] · [[rogue_trader_endings_by_character_obsidian#^untagged-appendix|未归类附录]]</li>
@@ -74,8 +81,8 @@
 <h5 id="中文">中文</h5>
 <p>索罗蒙听说关于狼人怪物的报告之后，认为不能再让这头怪物肆意游荡，残害帝国臣民。他花了几十年的时间，一直在追踪这头嗜血的怪物，到最后，他们终于在异端群星附近的某个遥远世界见面了。乌尔法杀死了格雷托，之后……他认为杀死索罗蒙的行为有失身份，便离开了。这场遭遇，给索罗蒙的灵魂留下了永远无法愈合的可怕伤痕。</p>
 <h5 id="english">English</h5>
-<p>On hearing accounts of a lupine monster, Solomorne decided he could not let it prowl free, savaging the Imperium's subjects wherever it went. He went on a decades-long hunt to track down the death-thirsty creature. Eventually, their paths crossed on a remote world near the Heathen Stars. Ulfar killed Glaito and... found it beneath him to do the same to Solomorne. The encounter left a permanent ugly scar on Anthar's soul.</p>
-<p>---</p>
+<p><span class="en">On hearing accounts of a lupine monster, Solomorne decided he could not let it prowl free, savaging the Imperium's subjects wherever it went. He went on a decades-long hunt to track down the death-thirsty creature. Eventually, their paths crossed on a remote world near the Heathen Stars. Ulfar killed Glaito and... found it beneath him to do the same to Solomorne. The encounter left a permanent ugly scar on Anthar's soul.</span></p>
+<hr class="scene-break">
 <h4 id="卡片-048-ulfar-card-048">卡片 048 ^ulfar-card-048</h4>
 <ul>
 <li>本卡触发条件：乌尔法的主判定会累计 <code>Ulfar_Chapter</code>、<code>Ulfar_Loner</code>、<code>Ulfar_Wulfen</code>，并记录 <code>UlfarChoice1_*</code> 到 <code>UlfarChoice4_*</code>、<code>UlfarChoiceSpecial1_Wulfen</code>、<code>UlfarChoiceSpecial2_Wulfen</code>、<code>UlfarBecomeChapterWolf</code>、<code>UlfarBecomeWulfen</code>；晚期覆盖还会看 <code>Ch3_UlfarLeftInCommoragh</code>、<code>UlfarQ2_AllSpaceMarinesDead</code>、<code>Ulfar_TorbaldKilled</code>、<code>UlfarBanished</code>、<code>Ulfar_ExCompanionByChaos</code>；组级分流：乌尔法被索罗蒙视为怪物追猎，或在主角叛变时选择反抗并战死的覆盖组。</li>
@@ -90,8 +97,8 @@
 <h5 id="中文-2">中文</h5>
 <p>高贵的太空野狼乌尔法最终得到了他渴望已久的光荣死亡。他与背叛全父的行商浪人开战，在战斗中光荣赴死，他的灵魂进入了卡尔哈拉。至于他是否能见到他的怒嚎者兄弟，恐怕只有死人才知道了。</p>
 <h5 id="english-2">English</h5>
-<p>The noble Space Wolf Ulfar ultimately found the honourable death he so longed for. He died in a fight with the Rogue Trader, who had betrayed the Allfather, and his spirit soared into Kjalhalla. Whether he met his brothers, the Baleful Howl, there — only the dead know.</p>
-<p>---</p>
+<p><span class="en">The noble Space Wolf Ulfar ultimately found the honourable death he so longed for. He died in a fight with the Rogue Trader, who had betrayed the Allfather, and his spirit soared into Kjalhalla. Whether he met his brothers, the Baleful Howl, there — only the dead know.</span></p>
+<hr class="scene-break">
 <span id="sec-003" class="anchor-target"></span>
 <h3 id="关联组-02-ulfar-group-02">关联组 02 ^ulfar-group-02</h3>
 <ul>
@@ -115,8 +122,8 @@
 <h5 id="中文-3">中文</h5>
 <p>乌尔法·雷狼加入了噬风者狼群，不久之后，他们的领袖索巴德光荣战死，而乌尔法成为了新任首领。他给芬里斯捎了个信，说他打算留在科罗努斯扩区，这片狩猎场里有太多邪恶的敌人，应当受到全父之怒的惩戒。于是，这支强大的狼群踏上了辉煌的传说之路。多年之后，乌尔法找到了可以光荣赴死的战斗，但这个时候，亚空间突然裂开了一道口子，绘有狼首的芬里斯舰船从里面冲了出来，前来支援他。乌尔法被他的忠实伙伴哈尔布兰特从战场上救了回来，并被授予了光荣的无畏仪式，穿上了神圣的盔甲。在受祝仪式上，他一边咒骂着，一边要求让他赴死，而他的兄弟们则报以哈哈大笑。恢复意识之后，乌尔法率领他的狼群前往异端群星，因为他濒死时看到了幻象，而全父在幻象中赋予了他全新的使命。自从太空野狼离开之后，科罗努斯扩区再也没人听说过他们的消息，但许多人坚信，总有一天他们会在胜利中凯旋。</p>
 <h5 id="english-3">English</h5>
-<p>After joining the Stormbiters, Ulfar Thunderlung soon became the pack leader, taking the place of Thorbald, who met an honourable end. The new leader sent a message to Fenris stating his intention to remain in the Expanse — there were too many enemies yet lurking in these hunting grounds that deserved the Allfather's wrath. Legends paved the formidable pack's path in gold. Years later, Ulfar found a battle in which he could meet his honourable death, but the warp was suddenly torn asunder, and ships from Fenris bearing the mark of the wolf head came to his aid. Saved from the battlefield by his loyal companion Halbrandt, Ulfar accepted the honours of the dreadnought and was entombed in sacred armour. During the blessed ritual he cursed and demanded to be left to his death, but his brothers merely answered with mirthful laughter. When he recovered his senses, Ulfar led his forces to the Heathen Stars — the Allfather had given him a new mission in a near-death vision. No one in the Expanse has heard word of the Space Wolves since their departure, yet many believe that one day they will return victorious.</p>
-<p>---</p>
+<p><span class="en">After joining the Stormbiters, Ulfar Thunderlung soon became the pack leader, taking the place of Thorbald, who met an honourable end. The new leader sent a message to Fenris stating his intention to remain in the Expanse — there were too many enemies yet lurking in these hunting grounds that deserved the Allfather's wrath. Legends paved the formidable pack's path in gold. Years later, Ulfar found a battle in which he could meet his honourable death, but the warp was suddenly torn asunder, and ships from Fenris bearing the mark of the wolf head came to his aid. Saved from the battlefield by his loyal companion Halbrandt, Ulfar accepted the honours of the dreadnought and was entombed in sacred armour. During the blessed ritual he cursed and demanded to be left to his death, but his brothers merely answered with mirthful laughter. When he recovered his senses, Ulfar led his forces to the Heathen Stars — the Allfather had given him a new mission in a near-death vision. No one in the Expanse has heard word of the Space Wolves since their departure, yet many believe that one day they will return victorious.</span></p>
+<hr class="scene-break">
 <h4 id="卡片-083-ulfar-card-083">卡片 083 ^ulfar-card-083</h4>
 <ul>
 <li>本卡触发条件：乌尔法的主线会把四轮选择累计到 <code>Ulfar_Chapter</code>、<code>Ulfar_Loner</code>、<code>Ulfar_Wulfen</code>；本地蓝图写明 Q1 <code>SkjaldDuel</code> 会先按局内小计给三者之一 +1，后续多处对话再继续加点。最终若 <code>Ulfar_Wulfen &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen &gt; Ulfar_Chapter</code>，进 <code>CompUlfar_Wulfen</code>；若 <code>Ulfar_Chapter &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen</code> 不大于 <code>Ulfar_Chapter</code>，进 <code>CompUlfar_Pack</code>；若没有任何计数严格大于 <code>Ulfar_Loner</code>，进 <code>CompUlfar_Lone</code>。</li>
@@ -131,8 +138,8 @@
 <h5 id="中文-4">中文</h5>
 <p>乌尔法埋葬了他的兄弟们之后，疲惫与失落的重担深深地压在了的肩上。尽管他对全父的忠诚依然坚韧，但数十年的战斗中已使他的心灵满是创伤。他无法违背他的誓言，于是便继续孤身一人闯荡，身为“怒嚎者”狼群最后的野狼，孤独地传唱着狼群的史诗。这头孤狼的诸多传说在无数世界流传。他以灰色的斗篷盖住他的盔甲，突然出现，而后又突然消失，在身后留下不义之人的尸体。无数关于这位神秘复仇者的故事被精心撰写出来，数百名自称“幼狼”的年轻英雄自发追随他的脚步，但乌尔法并没有回应他们。他既没有记住那些人的名字，也没有为他们的死亡而哀悼。他唯一渴望的只有光荣的死亡，但他的渴望迟迟未能实现。他活了下来，一如既往。</p>
 <h5 id="english-4">English</h5>
-<p>After burying his brothers, Ulfar felt the weight of exhaustion and loss on his shoulders. His loyalty to the Allfather was strong, but his heart had suffered much over his decades of battles. Unable to break his vows, he continued to sing the saga of his pack alone, the last of the Baleful Howl. Hundreds of legends on myriad worlds are told of the Lone Wolf. Covering his armour with a grey cloak, he would appear and vanish again, leaving only the corpses of the unrighteous behind. Stories were crafted about the mysterious avenger, and hundreds of young heroes, Wolflings, began to follow him. Ulfar did not call on them. He did not remember their names and did not mourn them. He longed only for an honourable death, but could not find it. He always survived.</p>
-<p>---</p>
+<p><span class="en">After burying his brothers, Ulfar felt the weight of exhaustion and loss on his shoulders. His loyalty to the Allfather was strong, but his heart had suffered much over his decades of battles. Unable to break his vows, he continued to sing the saga of his pack alone, the last of the Baleful Howl. Hundreds of legends on myriad worlds are told of the Lone Wolf. Covering his armour with a grey cloak, he would appear and vanish again, leaving only the corpses of the unrighteous behind. Stories were crafted about the mysterious avenger, and hundreds of young heroes, Wolflings, began to follow him. Ulfar did not call on them. He did not remember their names and did not mourn them. He longed only for an honourable death, but could not find it. He always survived.</span></p>
+<hr class="scene-break">
 <h4 id="卡片-084-ulfar-card-084">卡片 084 ^ulfar-card-084</h4>
 <ul>
 <li>本卡触发条件：乌尔法的主线会把四轮选择累计到 <code>Ulfar_Chapter</code>、<code>Ulfar_Loner</code>、<code>Ulfar_Wulfen</code>；本地蓝图写明 Q1 <code>SkjaldDuel</code> 会先按局内小计给三者之一 +1，后续多处对话再继续加点。最终若 <code>Ulfar_Wulfen &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen &gt; Ulfar_Chapter</code>，进 <code>CompUlfar_Wulfen</code>；若 <code>Ulfar_Chapter &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen</code> 不大于 <code>Ulfar_Chapter</code>，进 <code>CompUlfar_Pack</code>；若没有任何计数严格大于 <code>Ulfar_Loner</code>，进 <code>CompUlfar_Lone</code>。</li>
@@ -147,8 +154,8 @@
 <h5 id="中文-5">中文</h5>
 <p>埋葬了他的兄弟们之后，“迷途之人”乌尔法审视了他那破碎、流血的内心。对全父的忠诚、身为太空野狼的骄傲、兄弟之情，还有战斗的快感——这一切都被他付之一炬，灵魂中只剩下空洞的愤怒。从那一刻起，他的道路迷失于黑暗之中，而科罗努斯扩区开始流传起怪异的传说，讲述某个受到诅咒而被死亡拒绝的巨人。悲痛麻木了他的心灵，他无情地屠戮他遇到的所有人，无论是虔诚之人还是堕落之人。不过，他杀的更多是堕落之人，因为他所在的异端群星之中很少能遇到帝皇的忠诚信徒。</p>
 <h5 id="english-5">English</h5>
-<p>After burying his brothers, Ulfar Everlost looked inward upon his heart and found it broken and bleeding. Loyalty to the Allfather, the pride of a Wolf, brotherly love, and the thrill of battle — he laid it all upon the pyre, until hollow anger was all that remained in his soul. From that moment on, his path is lost in darkness. But there is an eerie legend in the Expanse that speaks of a monstrous titan rejected by death — a deliverer of curses that come to be. Numbed by sorrow, he slays both the pious and the corrupt, though more often the corrupt, as he has chosen to dwell upon the worlds of the Heathen Stars, where devotion to the Emperor is rare indeed.</p>
-<p>---</p>
+<p><span class="en">After burying his brothers, Ulfar Everlost looked inward upon his heart and found it broken and bleeding. Loyalty to the Allfather, the pride of a Wolf, brotherly love, and the thrill of battle — he laid it all upon the pyre, until hollow anger was all that remained in his soul. From that moment on, his path is lost in darkness. But there is an eerie legend in the Expanse that speaks of a monstrous titan rejected by death — a deliverer of curses that come to be. Numbed by sorrow, he slays both the pious and the corrupt, though more often the corrupt, as he has chosen to dwell upon the worlds of the Heathen Stars, where devotion to the Emperor is rare indeed.</span></p>
+<hr class="scene-break">
 <h4 id="卡片-085-ulfar-card-085">卡片 085 ^ulfar-card-085</h4>
 <ul>
 <li>本卡触发条件：乌尔法的主线会把四轮选择累计到 <code>Ulfar_Chapter</code>、<code>Ulfar_Loner</code>、<code>Ulfar_Wulfen</code>；本地蓝图写明 Q1 <code>SkjaldDuel</code> 会先按局内小计给三者之一 +1，后续多处对话再继续加点。最终若 <code>Ulfar_Wulfen &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen &gt; Ulfar_Chapter</code>，进 <code>CompUlfar_Wulfen</code>；若 <code>Ulfar_Chapter &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen</code> 不大于 <code>Ulfar_Chapter</code>，进 <code>CompUlfar_Pack</code>；若没有任何计数严格大于 <code>Ulfar_Loner</code>，进 <code>CompUlfar_Lone</code>。</li>
@@ -163,8 +170,8 @@
 <h5 id="中文-6">中文</h5>
 <p>乌尔法·雷狼的传奇在一颗冰冻的行星上划下了休止符。那里是太空死灵的墓穴世界，没人能找到他和他的怒嚎者狼群。那些前去搜寻的人，只有极少数人能活着回来，带回恐怖的见闻故事。虽然没人知道那颗寒冷的行星上有什么东西，但毫无疑问，那是可怕而致命的敌人。</p>
 <h5 id="english-6">English</h5>
-<p>The story of Ulfar Thunderlung ended on a frozen planet among the Necron Tomb Worlds. No one was ever able to find him or his Baleful Howl pack. Those who attempted to seldom returned with stories of their travels. Whatever lived on that frigid planet was horrifying and deadly.</p>
-<p>---</p>
+<p><span class="en">The story of Ulfar Thunderlung ended on a frozen planet among the Necron Tomb Worlds. No one was ever able to find him or his Baleful Howl pack. Those who attempted to seldom returned with stories of their travels. Whatever lived on that frigid planet was horrifying and deadly.</span></p>
+<hr class="scene-break">
 <h4 id="卡片-086-ulfar-card-086">卡片 086 ^ulfar-card-086</h4>
 <ul>
 <li>本卡触发条件：乌尔法的主线会把四轮选择累计到 <code>Ulfar_Chapter</code>、<code>Ulfar_Loner</code>、<code>Ulfar_Wulfen</code>；本地蓝图写明 Q1 <code>SkjaldDuel</code> 会先按局内小计给三者之一 +1，后续多处对话再继续加点。最终若 <code>Ulfar_Wulfen &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen &gt; Ulfar_Chapter</code>，进 <code>CompUlfar_Wulfen</code>；若 <code>Ulfar_Chapter &gt; Ulfar_Loner</code> 且 <code>Ulfar_Wulfen</code> 不大于 <code>Ulfar_Chapter</code>，进 <code>CompUlfar_Pack</code>；若没有任何计数严格大于 <code>Ulfar_Loner</code>，进 <code>CompUlfar_Lone</code>。</li>
@@ -179,8 +186,8 @@
 <h5 id="中文-7">中文</h5>
 <p>索巴德·铁皮继续领导噬风者狼群数十年，不断消灭科罗努斯扩区中的邪恶，为狼群的史诗增添了无数光彩。当他倒下时，他的继任者哈尔布兰特认为狼群是时候回家了。于是，他带领狼群进入了巨口。至于他们是否成功返回芬里斯，人们不得而知。</p>
 <h5 id="english-7">English</h5>
-<p>Thorbald Ironhide led the Stormbiters for decades more, exterminating evil in the Expanse and adding glorious verses to the saga of his pack. When he fell, his successor, Halbrandt, decided it was time for the Wolves to return home, and so he led the pack into the Maw. Whether they were successful in returning to Fenris is unknown.</p>
-<p>---</p>
+<p><span class="en">Thorbald Ironhide led the Stormbiters for decades more, exterminating evil in the Expanse and adding glorious verses to the saga of his pack. When he fell, his successor, Halbrandt, decided it was time for the Wolves to return home, and so he led the pack into the Maw. Whether they were successful in returning to Fenris is unknown.</span></p>
+<hr class="scene-break">
 <span id="sec-004" class="anchor-target"></span>
 <h3 id="关联组-03-ulfar-group-03">关联组 03 ^ulfar-group-03</h3>
 <ul>
@@ -203,8 +210,8 @@
 <h5 id="中文-8">中文</h5>
 <p>高贵的太空野狼乌尔法没能保护行商浪人免受远古星神的黑暗诱惑，最终在那头远古怪物手中光荣战死。黑暗化身的预言实现了一半，尽管乌尔法默默无闻地死去，但他的死法却充满了荣耀。</p>
 <h5 id="english-8">English</h5>
-<p>The noble Space Wolf Ulfar could not protect the Rogue Trader from the dark temptation of worshipping an ancient Star God. The dark Doppelgrendel's prophecy was half-fulfilled: though Ulfar met his end in obscurity, his death at the hands of the ancient monster was truly honourable and glorious.</p>
-<p>---</p>
+<p><span class="en">The noble Space Wolf Ulfar could not protect the Rogue Trader from the dark temptation of worshipping an ancient Star God. The dark Doppelgrendel's prophecy was half-fulfilled: though Ulfar met his end in obscurity, his death at the hands of the ancient monster was truly honourable and glorious.</span></p>
+<hr class="scene-break">
 <span id="sec-005" class="anchor-target"></span>
 <h3 id="关联组-04-ulfar-group-04">关联组 04 ^ulfar-group-04</h3>
 <ul>
@@ -227,8 +234,8 @@
 <h5 id="中文-9">中文</h5>
 <p>受人尊敬的乌尔法离开了行商浪人的舰队，独自出发寻找他光荣的狼群。噬风者狼群试图找到这只桀骜不驯的野狼，但徒劳无功。乌尔法彻底消失在了科罗努斯扩区的黑暗之中。</p>
 <h5 id="english-9">English</h5>
-<p>The esteemed Ulfar left the Rogue Trader's retinue and set out alone in search of his glorious pack. The Stormbiters tried to locate the defiant Wolf, but to no avail. He was forever lost in the darkness of the Expanse.</p>
-<p>---</p>
+<p><span class="en">The esteemed Ulfar left the Rogue Trader's retinue and set out alone in search of his glorious pack. The Stormbiters tried to locate the defiant Wolf, but to no avail. He was forever lost in the darkness of the Expanse.</span></p>
+<hr class="scene-break">
 <span id="sec-006" class="anchor-target"></span>
 <h3 id="关联组-05-ulfar-group-05">关联组 05 ^ulfar-group-05</h3>
 <ul>
@@ -253,9 +260,9 @@
 <h5 id="中文-10">中文</h5>
 <p>受到祝福的阿洁塔修女花了无数时间寻找乌尔法，试图将他从绝望之中拯救出来。到最后，她在一条铺满了人类之敌尸体的血腥小路中找到了他。她恳求乌尔法成为“命运之星”修会的圣骑士，承诺会给予他希望与陪伴，但这头独狼并没有听进去阿洁塔修女的话。</p>
 <h5 id="english-10">English</h5>
-<p>Blessed Sister Argenta spent many cycles looking for Ulfar to try to save him from his despair. When she caught up with him on a bloody path littered with bodies of enemies of Humanity, she begged Ulfar to become a paladin of the Order of the One Star, promising hope and companionship. But the Lone Wolf did not heed the words of the good sister.</p>
-<p>---</p>
-<p>---</p>
+<p><span class="en">Blessed Sister Argenta spent many cycles looking for Ulfar to try to save him from his despair. When she caught up with him on a bloody path littered with bodies of enemies of Humanity, she begged Ulfar to become a paladin of the Order of the One Star, promising hope and companionship. But the Lone Wolf did not heed the words of the good sister.</span></p>
+<hr class="scene-break">
+<hr class="scene-break">
 <p><a href="../index.html">返回结局入口</a> | <a href="09_%E7%8E%9B%E6%8B%89%E6%96%8B.html">上一角色</a> | <a href="11_%E7%BB%AE%E8%B4%9D%E6%8B%89.html">下一角色</a></p>
     </article>
     <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="09_%E7%8E%9B%E6%8B%89%E6%96%8B.html">上一页</a><a href="11_%E7%BB%AE%E8%B4%9D%E6%8B%89.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
@@ -268,6 +275,6 @@
       <div class="search-results" data-search-results></div>
     </div>
   </div>
-  <script src="../../assets/search.js" defer></script>
+  <script src="../../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>
