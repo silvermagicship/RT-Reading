@@ -1,8 +1,8 @@
-# ByteArts Rogue Trader Reading Archive
+﻿# ByteArts Rogue Trader Reading Archive
 
 This public repository contains the shareable reading package only.
 
-- Online reading site: https://silvermagicship.github.io/ByteArts-Reading/
+- Online reading site: https://silvermagicship.github.io/RT-Reading/
 - Full Markdown archive: [`markdown/剧情_阅读库`](markdown/剧情_阅读库)
 
 The original working repository, extraction cache, scripts, and engineering notes are not included here. This repository is meant for readers who want either a mobile-friendly web version or a downloadable Markdown archive.
