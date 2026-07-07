@@ -338,7 +338,14 @@ strong { font-weight: 800; color: #7c2630; }
   cursor: pointer;
 }
 .reading-settings { position: relative; }
-.reading-settings summary { list-style: none; }
+.reading-settings summary {
+  justify-content: center;
+  width: 42px;
+  padding: .42rem 0;
+  list-style: none;
+  font-size: 1.08rem;
+  line-height: 1;
+}
 .reading-settings summary::-webkit-details-marker { display: none; }
 .reading-settings-panel {
   display: grid;
@@ -419,13 +426,16 @@ html.night-mode .en { color: #ad9f92; }
 /* keep reading settings in normal flow */
 .reading-settings[open] .reading-settings-panel { position: static; right: auto; }
 @media (max-width: 680px) {
-  .site-header { align-items: flex-start; }
-  .header-actions { flex-wrap: wrap; justify-content: flex-end; }
+  .site-header { align-items: center; gap: .45rem; padding: .52rem .62rem; }
+  .brand { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .84rem; }
+  .header-actions { flex: 0 0 auto; flex-wrap: nowrap; justify-content: flex-end; gap: .28rem; font-size: .78rem; }
+  .header-actions:has(.reading-settings[open]) { flex-wrap: wrap; }
   .archive-link,
   .search-link,
-  .reading-settings summary { min-height: 38px; padding: .28rem .48rem; }
-  .reading-settings { flex-basis: 100%; display: grid; justify-items: end; }
-  .reading-settings-panel { width: 100%; min-width: 0; box-shadow: none; }
+  .reading-settings summary { min-height: 34px; padding: .18rem .38rem; }
+  .reading-settings summary { width: 34px; padding: .18rem 0; font-size: 1rem; }
+  .reading-settings[open] { flex-basis: 100%; display: grid; justify-items: end; }
+  .reading-settings-panel { width: min(100%, 21rem); min-width: min(82vw, 21rem); box-shadow: none; }
   .home-hero h1 { font-size: clamp(2.65rem, 18vw, 4.3rem); }
   p, li { font-weight: 470; }
   em { font-weight: 470; }
