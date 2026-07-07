@@ -202,9 +202,7 @@ th { background: #efe5d5; text-align: left; }
 }
 .entry-card span { font-size: 1.45rem; font-weight: 900; }
 .entry-card strong { color: var(--accent); }
-.entry-card small { color: var(--muted); font-size: .92rem; }
 .entry-card em { align-self: end; color: var(--accent-2); font-style: normal; }
-.home-meta { color: var(--muted); }
 .archive-download {
   margin: 1rem 0;
   padding: 1rem;
