@@ -12,18 +12,20 @@
     <a class="brand" href="../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_11.html">上一页</a><a href="main_02_12_02.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_11.html">上一页</a><a href="main_02_12_02.html">下一页</a><a href="../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E5%9F%BA%E4%BA%9A%E7%93%A6%E4%BC%BD%E9%A9%AC%E9%94%BB%E9%80%A0%E4%B8%96%E7%95%8C-kiava-gamma-forge-world12">第二章｜基亚瓦伽马锻造世界 / Kiava Gamma forge world（1/2）</a></li><li class="toc-level-2"><a href="#%E5%B0%8F%E4%BB%BB%E5%8A%A1%E4%B8%8A%E4%B8%8B%E6%96%87">小任务上下文</a></li><li class="toc-level-2"><a href="#forgeworld">ForgeWorld</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFapostolfirstvisiondialogue">场景：ApostolFirstVisionDialogue</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFchaosenginetamed">场景：ChaosEngineTamed</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-2">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue">场景：Cogitator Dialogue</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-3">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue1">场景：Cogitator Dialogue1</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-4">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue2">场景：Cogitator Dialogue2</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-5">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue3">场景：Cogitator Dialogue3</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-6">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue4">场景：Cogitator Dialogue4</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-7">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue5">场景：Cogitator Dialogue5</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-8">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcogitator-dialogue6">场景：Cogitator Dialogue6</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-9">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFcorruptedservitordialogue">场景：CorruptedServitorDialogue</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-10">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFdarkmagosdialogue">场景：DarkMagosDialogue</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-11">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFdataforge">场景：DataForge</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-12">场景</a></li></ol></details>
     <article class="content">
 <h1 id="第二章基亚瓦伽马锻造世界-kiava-gamma-forge-world12">第二章｜基亚瓦伽马锻造世界 / Kiava Gamma forge world（1/2）</h1>
@@ -1249,16 +1251,8 @@
 <p>  <em>熔炉内部发出了隆隆声，伴随着古老点击的轰鸣声，变得越来越响。在隆隆声中，传来了金属齿轮刺耳的咯吱声与某些不知名机械装置的叮当声。随后，机械修会的这件造物以缓慢的速度，仿佛迟疑一般，吐出了一台数据库，上面刻着冯·瓦兰修斯家族的徽记。</em><br><span class="en">  <em>Rumbling builds up in the bowels of the furnace, growing stronger apace with the sound of the ancient motors. The rumble is echoed by the screeching of metal gears and the clanging of unknown mechanisms. Slowly, almost hesitantly, the creation of the Adeptus Mechanicus disgorges a data-bank engraved with the coat of arms of House von Valancius.</em></span></p>
 <p><a href="index.html">返回目录</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_11.html">上一页</a><a href="main_02_12_02.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_11.html">上一页</a><a href="main_02_12_02.html">下一页</a><a href="../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

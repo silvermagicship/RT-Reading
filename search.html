@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>剧情阅读库 - Rogue Trader 剧情阅读库</title>
+  <title>搜索阅读库 - Rogue Trader 剧情阅读库</title>
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -28,37 +28,13 @@
     <nav class="reader-nav" aria-label="页面导航"><a href="index.html">首页</a><a href="index.html">上级</a><a href="search.html">搜索</a></nav>
     
     <article class="content">
-<section class="home-hero">
-  <p class="kicker">Warhammer 40,000: Rogue Trader</p>
-  <h1>剧情阅读库</h1>
-  <p class="home-byline">整理 by @绿沙滩</p>
-  <form class="home-search" role="search" action="search.html" method="get">
-    <input name="q" type="search" autocomplete="off" placeholder="搜索角色、任务、地点或台词">
+<section class="search-page">
+  <h1>搜索阅读库</h1>
+  <form class="search-page-form" role="search" action="search.html" method="get">
+    <input id="site-search" name="q" data-search-page-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
     <button type="submit">搜索</button>
   </form>
-</section>
-<section class="entry-grid" aria-label="阅读入口">
-<a class="entry-card" href="%E4%B8%BB%E7%BA%BF/index.html">
-  <span>主线</span>
-  <strong>Main Story</strong>
-  <em>122 页</em>
-</a><a class="entry-card" href="%E5%90%8C%E4%BC%B4/index.html">
-  <span>同伴</span>
-  <strong>Companions</strong>
-  <em>99 页</em>
-</a><a class="entry-card" href="%E7%BB%93%E5%B1%80%E5%8D%A1%E7%89%87/index.html">
-  <span>结局卡片</span>
-  <strong>Ending Cards</strong>
-  <em>30 页</em>
-</a><a class="entry-card" href="%E9%9A%8F%E6%9C%BA%E5%AF%B9%E8%AF%9D%E4%B8%8E%E7%9F%AD%E5%8F%B0%E8%AF%8D/index.html">
-  <span>随机对话与短台词</span>
-  <strong>Random Dialogue</strong>
-  <em>110 页</em>
-</a>
-</section>
-<section class="archive-download">
-  <h2>下载全存档</h2>
-  <a href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">Markdown 存档</a>
+  <div class="search-results page-results" data-search-results></div>
 </section>
     </article>
     <nav class="reader-nav bottom" aria-label="页面导航"><a href="index.html">首页</a><a href="index.html">上级</a><a href="search.html">搜索</a></nav>

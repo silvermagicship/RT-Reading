@@ -12,18 +12,20 @@
     <a class="brand" href="../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_05_01_01.html">上一页</a><a href="main_05_01_03.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_05_01_01.html">上一页</a><a href="main_05_01_03.html">下一页</a><a href="../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E7%AC%AC%E4%BA%94%E7%AB%A0%E5%A2%93%E5%BF%97%E9%93%AD%E4%B8%96%E7%95%8C-epitaphia23">第五章｜墓志铭世界 / Epitaphia（2/3）</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFnecronlord">场景：NecronLord</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFnomosarrival">场景：NomosArrival</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-2">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFtanakia">场景：Tanakia</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-3">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFxavierfinal-1">场景：XavierFinal   1</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-4">场景</a></li></ol></details>
     <article class="content">
 <h1 id="第五章墓志铭世界-epitaphia23">第五章｜墓志铭世界 / Epitaphia（2/3）</h1>
@@ -797,16 +799,8 @@
 <p>  <em>乌尔法露出了充满兴奋与恶意的笑容。</em>“我们又见面了，你这该死的两面派！某种感觉一直在折磨着我，我感觉我并没有真正履行好全父的职责……因为我还有个该杀的人没杀。”<br><span class="en">  <em>The red-headed giant gives you a menacing, exhilarated grin.</em> "We meet again, you two-faced worm! I've had this feeling gnawing away at me, as if I haven't yet fulfilled my duty to the Allfather... As if I haven't yet killed someone I should."</span></p>
 <p><a href="index.html">返回目录</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_05_01_01.html">上一页</a><a href="main_05_01_03.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_05_01_01.html">上一页</a><a href="main_05_01_03.html">下一页</a><a href="../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

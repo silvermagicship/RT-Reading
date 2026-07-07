@@ -12,18 +12,20 @@
     <a class="brand" href="../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_01.html">上一页</a><a href="main_02_02_02.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_01.html">上一页</a><a href="main_02_02_02.html">下一页</a><a href="../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E9%9B%85%E5%8A%AA%E6%96%AF%E5%AE%AB%E6%AE%BF%E4%B8%8E%E8%A1%8C%E6%98%9F%E6%80%BB%E7%9D%A3-janus-palace-and-planetary-governor13">第二章｜雅努斯宫殿与行星总督 / Janus palace and planetary governor（1/3）</a></li><li class="toc-level-2"><a href="#%E5%B0%8F%E4%BB%BB%E5%8A%A1%E4%B8%8A%E4%B8%8B%E6%96%87">小任务上下文</a></li><li class="toc-level-2"><a href="#agriworldpalace">AgriworldPalace</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFdoorguard">场景：DoorGuard</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFgovernor-dialogue-1">场景：Governor Dialogue   1</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF-2">场景</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AFgovernor-dialogue-2">场景：Governor Dialogue   2</a></li></ol></details>
     <article class="content">
 <h1 id="第二章雅努斯宫殿与行星总督-janus-palace-and-planetary-governor13">第二章｜雅努斯宫殿与行星总督 / Janus palace and planetary governor（1/3）</h1>
@@ -800,16 +802,8 @@
 <p>  “这个世界曾是颗蛮荒的行星，上面满是异兽，完全不适合种植任何东西。即便是现在，哪怕我们尽了最大努力，加努斯还是经常会造反。地震、海啸、新的害虫、入侵耕地的杂草……有的时候，我不禁会觉得这个世界是有意识的。它就像一个任性而顽固的孩子一样，想要摧毁我们已经获得的一切！”<br><span class="en">  "This world was once a wild planet, full of xenobeasts and utterly unsuitable for growing anything. To this day, despite our best efforts, Janus regularly rebels against us. Earthquakes, tsunamis, the emergence of new pests and weeds that invade the arable land... sometimes I cannot help but think that this world is endowed with consciousness — the consciousness of a capricious and stubborn child who likes to spoil everything that we have achieved!"</span></p>
 <p><a href="index.html">返回目录</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_01.html">上一页</a><a href="main_02_02_02.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_02_01.html">上一页</a><a href="main_02_02_02.html">下一页</a><a href="../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

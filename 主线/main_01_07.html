@@ -12,18 +12,20 @@
     <a class="brand" href="../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_01_06.html">上一页</a><a href="main_02_01.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_01_06.html">上一页</a><a href="main_02_01.html">下一页</a><a href="../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%B0%8F%E8%8E%B1%E5%8D%A1%E5%BE%B7%E9%99%B7%E8%90%BD%E4%B8%8E%E6%92%A4%E7%A6%BB-the-fall-and-evacuation-of-rykad-minoris">第一章｜小莱卡德陷落与撤离 / The fall and evacuation of Rykad Minoris</a></li><li class="toc-level-2"><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E5%B0%8F%E8%8E%B1%E5%8D%A1%E5%BE%B7%E9%99%B7%E8%90%BD%E4%B8%8E%E6%92%A4%E7%A6%BB-the-fall-and-evacuation-of-rykad-minoris-2">第一章｜小莱卡德陷落与撤离 / The fall and evacuation of Rykad Minoris</a></li><li class="toc-level-3"><a href="#%E5%BD%92%E6%A1%A3%E8%AF%B4%E6%98%8E">归档说明</a></li><li class="toc-level-3"><a href="#%E4%BB%BB%E5%8A%A1%E4%B8%8A%E4%B8%8B%E6%96%87">任务上下文</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF">场景</a></li></ol></details>
     <article class="content">
 <h1 id="第一章小莱卡德陷落与撤离-the-fall-and-evacuation-of-rykad-minoris">第一章｜小莱卡德陷落与撤离 / The fall and evacuation of Rykad Minoris</h1>
@@ -351,16 +353,8 @@
 <p>  <em>正当你思考着要拯救民众的时候，潜伏在你意识深处的某个念头一闪而过。你心中涌出了极度的恐惧，几乎喘不过气来，仿佛这个念头本身就是在在盗窃某位强大掠食者的猎物一样。这颗行星已经被从亚空间中延伸出来的丝线包裹其中，它理当得到一位新的主人。</em><br><span class="en">  <em>Something lurking in the depths of your consciousness bristles at the passing thought of saving people. The spike of horror you feel takes your breath away — it is as if you are planning to steal the prey of a mighty predator. The planet is already wrapped in a thread stretching out from the warp — it deserves to have a new master.</em></span></p>
 <p><a href="index.html">返回目录</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_01_06.html">上一页</a><a href="main_02_01.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_01_06.html">上一页</a><a href="main_02_01.html">下一页</a><a href="../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

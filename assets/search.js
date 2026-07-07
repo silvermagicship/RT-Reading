@@ -1,33 +1,20 @@
 
 (() => {
-  const panel = document.querySelector("[data-search-panel]");
-  const resultBox = document.querySelector("[data-search-results]");
-  const inputs = Array.from(document.querySelectorAll("[data-search-input]"));
-  let indexPromise;
-
-  const openPanel = () => {
-    if (!panel) return;
-    panel.hidden = false;
-    const input = panel.querySelector("[data-search-input]");
-    if (input) setTimeout(() => input.focus(), 20);
-  };
-  const closePanel = () => {
-    if (panel) panel.hidden = true;
-  };
-
   const indexUrl = (() => {
-    const script = document.currentScript || document.querySelector('script[src$="search.js"]');
+    const script = document.currentScript || document.querySelector('script[src*="search"]');
     return new URL("search-index.json", script ? script.src : `${location.origin}/assets/search.js`).toString();
   })();
-
+  let indexPromise;
   const loadIndex = () => {
     if (!indexPromise) {
       indexPromise = fetch(indexUrl).then((response) => response.json()).catch(() => []);
     }
     return indexPromise;
   };
-
-  const renderResults = (records, query) => {
+  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[char]));
+  const renderResults = (records, query, resultBox) => {
     if (!resultBox) return;
     const q = query.trim().toLowerCase();
     if (!q) {
@@ -48,7 +35,7 @@
       })
       .filter((item) => item.score > 0)
       .sort((a, b) => b.score - a.score)
-      .slice(0, 40);
+      .slice(0, 80);
     if (!scored.length) {
       resultBox.innerHTML = '<p class="muted">没有找到匹配结果。</p>';
       return;
@@ -61,47 +48,23 @@
       </a>
     `).join("");
   };
-
-  const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({
-    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-  }[char]));
-
-  document.addEventListener("click", (event) => {
-    const opener = event.target.closest("[data-search-open]");
-    if (opener) {
+  const setupSearchPage = () => {
+    const input = document.querySelector("[data-search-page-input]");
+    const resultBox = document.querySelector("[data-search-results]");
+    if (!input || !resultBox) return;
+    const params = new URLSearchParams(location.search);
+    const initial = params.get("q") || "";
+    input.value = initial;
+    loadIndex().then((records) => renderResults(records, initial, resultBox));
+    input.form?.addEventListener("submit", (event) => {
       event.preventDefault();
-      openPanel();
-      const sourceInput = opener.closest("form")?.querySelector("[data-search-input]");
-      if (sourceInput && sourceInput.value) {
-        const panelInput = panel.querySelector("[data-search-input]");
-        panelInput.value = sourceInput.value;
-        loadIndex().then((records) => renderResults(records, panelInput.value));
-      }
-    }
-    if (event.target.closest("[data-search-close]") || event.target === panel) {
-      closePanel();
-    }
-  });
-
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closePanel();
-  });
-
-  inputs.forEach((input) => {
-    input.addEventListener("input", () => {
-      loadIndex().then((records) => renderResults(records, input.value));
+      const url = new URL(location.href);
+      if (input.value.trim()) url.searchParams.set("q", input.value.trim());
+      else url.searchParams.delete("q");
+      history.replaceState(null, "", url);
+      loadIndex().then((records) => renderResults(records, input.value, resultBox));
     });
-    input.addEventListener("keydown", (event) => {
-      if (event.key === "Enter") {
-        event.preventDefault();
-        openPanel();
-        const panelInput = panel.querySelector("[data-search-input]");
-        panelInput.value = input.value;
-        loadIndex().then((records) => renderResults(records, input.value));
-      }
-    });
-  });
-
+  };
   const setupReaderTypography = () => {
     const root = document.querySelector(".content");
     if (root && root.dataset.dialogueWrapped !== "1") {
@@ -109,9 +72,7 @@
       const walker = document.createTreeWalker(root, 4, {
         acceptNode(node) {
           const parent = node.parentElement;
-          if (!parent || parent.closest(".en, .en-inline, .en-label, .zh-dialogue, script, style")) {
-            return 2;
-          }
+          if (!parent || parent.closest(".en, .en-inline, .en-label, .zh-dialogue, script, style")) return 2;
           return /“[^”]+”/.test(node.nodeValue) ? 1 : 3;
         }
       });
@@ -134,27 +95,35 @@
         node.parentNode.replaceChild(frag, node);
       }
     }
-
-    const key = "rt-reader-scale-v2";
-    const min = 0.88;
-    const max = 1.24;
-    const step = 0.06;
-    const value = document.querySelector("[data-scale-value]");
-    const clamp = (n) => Math.min(max, Math.max(min, n));
-    const apply = (n) => {
-      const scale = clamp(Number(n) || 1);
-      document.documentElement.style.setProperty("--reader-scale", scale.toFixed(2));
-      if (value) value.textContent = `${Math.round(scale * 100)}%`;
-      localStorage.setItem(key, scale.toFixed(2));
-    };
-    apply(localStorage.getItem(key) || 1);
-    document.querySelector("[data-scale-down]")?.addEventListener("click", () => {
-      apply((parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--reader-scale")) || 1) - step);
-    });
-    document.querySelector("[data-scale-up]")?.addEventListener("click", () => {
-      apply((parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--reader-scale")) || 1) + step);
-    });
-    document.querySelector("[data-scale-reset]")?.addEventListener("click", () => apply(1));
   };
+  const setupReaderSettings = () => {
+    const font = document.querySelector("[data-setting-font]");
+    const leading = document.querySelector("[data-setting-leading]");
+    const night = document.querySelector("[data-setting-night]");
+    const reset = document.querySelector("[data-setting-reset]");
+    const key = "rt-reader-settings-v3";
+    const defaults = { font: 100, leading: 192, night: false };
+    const read = () => {
+      try { return { ...defaults, ...JSON.parse(localStorage.getItem(key) || "{}") }; }
+      catch { return { ...defaults }; }
+    };
+    const apply = (settings) => {
+      document.documentElement.style.setProperty("--reader-scale", (settings.font / 100).toFixed(2));
+      document.documentElement.style.setProperty("--reader-leading", (settings.leading / 100).toFixed(2));
+      document.documentElement.classList.toggle("night-mode", Boolean(settings.night));
+      if (font) font.value = String(settings.font);
+      if (leading) leading.value = String(settings.leading);
+      if (night) night.checked = Boolean(settings.night);
+      localStorage.setItem(key, JSON.stringify(settings));
+    };
+    let current = read();
+    apply(current);
+    font?.addEventListener("input", () => { current = { ...current, font: Number(font.value) }; apply(current); });
+    leading?.addEventListener("input", () => { current = { ...current, leading: Number(leading.value) }; apply(current); });
+    night?.addEventListener("change", () => { current = { ...current, night: night.checked }; apply(current); });
+    reset?.addEventListener("click", () => { current = { ...defaults }; apply(current); });
+  };
+  setupSearchPage();
   setupReaderTypography();
+  setupReaderSettings();
 })();

@@ -12,18 +12,20 @@
     <a class="brand" href="../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_00_02.html">上一页</a><a href="main_00_04.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_00_02.html">上一页</a><a href="main_00_04.html">下一页</a><a href="../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E5%BA%8F%E7%AB%A0%E4%B8%8E%E8%A5%BF%E5%A5%A5%E5%A4%9A%E6%8B%89%E5%86%AF%E7%93%A6%E5%85%B0%E4%BF%AE%E6%96%AF%E8%B0%88%E8%B0%88-talk-to-theodora-von-valancius">序章｜与西奥多拉·冯·瓦兰修斯谈谈 / Talk to Theodora von Valancius</a></li><li class="toc-level-2"><a href="#%E5%BA%8F%E7%AB%A0%E4%B8%8E%E8%A5%BF%E5%A5%A5%E5%A4%9A%E6%8B%89%E5%86%AF%E7%93%A6%E5%85%B0%E4%BF%AE%E6%96%AF%E8%B0%88%E8%B0%88-talk-to-theodora-von-valancius-2">序章｜与西奥多拉·冯·瓦兰修斯谈谈 / Talk to Theodora von Valancius</a></li><li class="toc-level-3"><a href="#%E4%BB%BB%E5%8A%A1%E4%B8%8A%E4%B8%8B%E6%96%87">任务上下文</a></li><li class="toc-level-3"><a href="#%E5%9C%BA%E6%99%AF">场景</a></li></ol></details>
     <article class="content">
 <h1 id="序章与西奥多拉冯瓦兰修斯谈谈-talk-to-theodora-von-valancius">序章｜与西奥多拉·冯·瓦兰修斯谈谈 / Talk to Theodora von Valancius</h1>
@@ -436,16 +438,8 @@
 <p>  “无论我在虚空的边界之外发现了什么东西，它们的命运都将由我一个人决定。我发现的每个世界，以及在这些世界中可以找到的一切，包括资源、人民、财富与奥秘，这一切都会归我所有。我掌控着亿万人的生死，统治着无数颗行星。那些行星总督或指挥官根本无法想象我拥有多么庞大的财富。而你，{name}，你的身体中流淌着冯·瓦兰修斯家族的血脉，你是家族的继承人之一。当时机到来时，你有权要求得到这份遗产。”<br><span class="en">  "It is my decision alone to determine the fate of whatever I find past the bounds of the explored void. Every world I discover, along with all there is to find thereon — resources, people, riches, and mysteries — is mine by right. I command millions of lives, rule over numerous planets, and possess fortunes that no planetary governor or commander could dream of amassing. And you, {name}, are one of those with von Valancius blood in their veins and a rightful claim to this inheritance when the hour comes."</span></p>
 <p><a href="index.html">返回目录</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_00_02.html">上一页</a><a href="main_00_04.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../index.html">首页</a><a href="index.html">上级</a><a href="main_00_02.html">上一页</a><a href="main_00_04.html">下一页</a><a href="../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

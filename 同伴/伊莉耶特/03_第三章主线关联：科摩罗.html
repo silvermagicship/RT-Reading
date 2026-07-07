@@ -12,18 +12,20 @@
     <a class="brand" href="../../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="02_%E8%BF%B7%E5%A4%B1%E7%9A%84%E9%81%93%E9%80%94.html">上一页</a><a href="04_%E6%B5%81%E6%B5%AA%E8%80%85%E7%9A%84%E8%81%8C%E8%B4%A3.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="02_%E8%BF%B7%E5%A4%B1%E7%9A%84%E9%81%93%E9%80%94.html">上一页</a><a href="04_%E6%B5%81%E6%B5%AA%E8%80%85%E7%9A%84%E8%81%8C%E8%B4%A3.html">下一页</a><a href="../../search.html">搜索</a></nav>
     
     <article class="content">
 <h1 id="第三章主线关联科摩罗解救伊莉耶特">第三章主线关联：科摩罗解救伊莉耶特</h1>
@@ -160,16 +162,8 @@
 <p>  “你这没骨气的烂肉！”<em>一个正在观察伊莉耶特的异形俯下身子，从她胸前扯下了那颗闪闪发光的深红色宝石。</em>“至少我可以永远品尝她灵魂中的痛苦。别挡我的路，猴子！”<br><span class="en">  "Spineless carrion!" <em>One of the xenos who were observing Yrliet leans forward and tears the radiant crimson gemstone from her chest.</em> "At least I will savour the emanations of her soul's eternal agony. Out of my way, mon-keigh!"</span></p>
 <p><a href="../index.html">返回同伴目录</a> | <a href="index.html">返回伊莉耶特目录</a> | <a href="02_%E8%BF%B7%E5%A4%B1%E7%9A%84%E9%81%93%E9%80%94.html">上一章</a> | <a href="04_%E6%B5%81%E6%B5%AA%E8%80%85%E7%9A%84%E8%81%8C%E8%B4%A3.html">下一章</a></p>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="02_%E8%BF%B7%E5%A4%B1%E7%9A%84%E9%81%93%E9%80%94.html">上一页</a><a href="04_%E6%B5%81%E6%B5%AA%E8%80%85%E7%9A%84%E8%81%8C%E8%B4%A3.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="02_%E8%BF%B7%E5%A4%B1%E7%9A%84%E9%81%93%E9%80%94.html">上一页</a><a href="04_%E6%B5%81%E6%B5%AA%E8%80%85%E7%9A%84%E8%81%8C%E8%B4%A3.html">下一页</a><a href="../../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

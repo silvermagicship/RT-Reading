@@ -12,18 +12,20 @@
     <a class="brand" href="../../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E5%B8%95%E6%96%AF%E5%8D%A1_%E5%9B%9E%E5%BA%94_01.html">上一页</a><a href="%E6%97%A0%E5%9B%9E%E5%BA%94.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E5%B8%95%E6%96%AF%E5%8D%A1_%E5%9B%9E%E5%BA%94_01.html">上一页</a><a href="%E6%97%A0%E5%9B%9E%E5%BA%94.html">下一页</a><a href="../../search.html">搜索</a></nav>
     <details class="toc"><summary>本页目录</summary><ol><li class="toc-level-1"><a href="#%E5%B8%95%E6%96%AF%E5%8D%A1%E5%9B%9E%E5%BA%9422">帕斯卡：回应（2/2）</a></li><li class="toc-level-2"><a href="#%E5%9B%9E%E5%BA%94">回应</a></li><li class="toc-level-3"><a href="#%E4%BC%8A%E5%A5%A5%E8%B4%A1---%E5%B8%95%E6%96%AF%E5%8D%A1">伊奥贡 -&gt; 帕斯卡</a></li><li class="toc-level-3"><a href="#%E4%BC%8A%E5%A5%A5%E8%B4%A1---%E5%B8%95%E6%96%AF%E5%8D%A1-2">伊奥贡 -&gt; 帕斯卡</a></li><li class="toc-level-3"><a href="#%E4%BC%8A%E5%A5%A5%E8%B4%A1---%E5%B8%95%E6%96%AF%E5%8D%A1%E7%B4%A2%E7%BD%97%E8%92%99">伊奥贡 -&gt; 帕斯卡、索罗蒙</a></li><li class="toc-level-3"><a href="#%E4%BC%8A%E5%A5%A5%E8%B4%A1---%E5%B8%95%E6%96%AF%E5%8D%A1-3">伊奥贡 -&gt; 帕斯卡</a></li></ol></details>
     <article class="content">
 <h1 id="帕斯卡回应22">帕斯卡：回应（2/2）</h1>
@@ -95,16 +97,8 @@
 <li><span class="en">"Registering Category Three and Category Five manifold sacrilege. I demand a review of Genetor Februs's status and the implementation of expiative diagnostics to eradicate heretical thoughts."</span></li>
 </ul>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E5%B8%95%E6%96%AF%E5%8D%A1_%E5%9B%9E%E5%BA%94_01.html">上一页</a><a href="%E6%97%A0%E5%9B%9E%E5%BA%94.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="index.html">上级</a><a href="%E5%B8%95%E6%96%AF%E5%8D%A1_%E5%9B%9E%E5%BA%94_01.html">上一页</a><a href="%E6%97%A0%E5%9B%9E%E5%BA%94.html">下一页</a><a href="../../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>

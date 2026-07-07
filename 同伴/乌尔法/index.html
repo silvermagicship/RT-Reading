@@ -12,18 +12,20 @@
     <a class="brand" href="../../index.html">Rogue Trader 剧情阅读库</a>
     <div class="header-actions">
       <a class="archive-link" href="https://github.com/silvermagicship/RT-Reading/tree/main/markdown">下载存档</a>
-      <button class="search-toggle" type="button" data-search-open aria-label="打开搜索">搜索</button>
+      <a class="search-link" href="../../search.html">搜索</a>
+      <details class="reading-settings">
+        <summary>阅读设置</summary>
+        <div class="reading-settings-panel">
+          <label>字号 <input type="range" min="88" max="124" step="6" value="100" data-setting-font></label>
+          <label>行距 <input type="range" min="165" max="210" step="5" value="192" data-setting-leading></label>
+          <label class="setting-check"><input type="checkbox" data-setting-night> 夜间模式</label>
+          <button type="button" data-setting-reset>恢复默认</button>
+        </div>
+      </details>
     </div>
   </header>
-  <div class="reader-tools" aria-label="阅读字号">
-    <div class="reader-scale-control">
-      <button type="button" data-scale-down aria-label="减小字号">A-</button>
-      <button type="button" data-scale-reset aria-label="恢复字号"><span class="reader-scale-value" data-scale-value>100%</span></button>
-      <button type="button" data-scale-up aria-label="放大字号">A+</button>
-    </div>
-  </div>
   <main class="reader">
-    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="03_%E8%8A%AC%E9%87%8C%E6%96%AF%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF.html">上一页</a><a href="../%E4%BC%8A%E5%A5%A5%E8%B4%A1/01_%E6%AD%A3%E4%B9%89%E7%9A%84%E4%BB%A3%E4%BB%B7%EF%BC%9A%E5%8C%BB%E7%96%97%E9%82%80%E8%AF%B7.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="03_%E8%8A%AC%E9%87%8C%E6%96%AF%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF.html">上一页</a><a href="../%E4%BC%8A%E5%A5%A5%E8%B4%A1/01_%E6%AD%A3%E4%B9%89%E7%9A%84%E4%BB%A3%E4%BB%B7%EF%BC%9A%E5%8C%BB%E7%96%97%E9%82%80%E8%AF%B7.html">下一页</a><a href="../../search.html">搜索</a></nav>
     
     <article class="content">
 <h1 id="乌尔法">乌尔法</h1>
@@ -35,16 +37,8 @@
 <li><a href="03_%E8%8A%AC%E9%87%8C%E6%96%AF%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF.html">芬里斯生生不息</a></li>
 </ul>
     </article>
-    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="03_%E8%8A%AC%E9%87%8C%E6%96%AF%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF.html">上一页</a><a href="../%E4%BC%8A%E5%A5%A5%E8%B4%A1/01_%E6%AD%A3%E4%B9%89%E7%9A%84%E4%BB%A3%E4%BB%B7%EF%BC%9A%E5%8C%BB%E7%96%97%E9%82%80%E8%AF%B7.html">下一页</a><a href="#site-search" data-search-open>搜索</a></nav>
+    <nav class="reader-nav bottom" aria-label="页面导航"><a href="../../index.html">首页</a><a href="../index.html">上级</a><a href="03_%E8%8A%AC%E9%87%8C%E6%96%AF%E7%94%9F%E7%94%9F%E4%B8%8D%E6%81%AF.html">上一页</a><a href="../%E4%BC%8A%E5%A5%A5%E8%B4%A1/01_%E6%AD%A3%E4%B9%89%E7%9A%84%E4%BB%A3%E4%BB%B7%EF%BC%9A%E5%8C%BB%E7%96%97%E9%82%80%E8%AF%B7.html">下一页</a><a href="../../search.html">搜索</a></nav>
   </main>
-  <div class="search-panel" data-search-panel hidden>
-    <div class="search-box">
-      <button class="search-close" type="button" data-search-close aria-label="关闭搜索">×</button>
-      <label for="site-search">搜索阅读库</label>
-      <input id="site-search" data-search-input type="search" autocomplete="off" placeholder="输入角色、任务或一句台词">
-      <div class="search-results" data-search-results></div>
-    </div>
-  </div>
   <script src="../../assets/search.reader-typography-2.js" defer></script>
 </body>
 </html>
