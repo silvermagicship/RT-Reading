@@ -247,12 +247,6 @@
 <li><code>Cue_0036</code></li>
 <li>海因里希又犹豫了一会儿，他的手放在了沉思者的开关上。 / “我准备加快这个过程。这样一来，一切就会尽快结束了。”</li>
 <li><span class="en">Heinrix vacillates for another moment — and his hands come to rest on the cogitator's switches. /  "I will accelerate the process. So that everything is over as soon as possible."</span></li>
-<li><code>Cue_0033</code></li>
-<li>沉思者的屏幕闪烁起来，低沉的轰鸣变成了疯狂的嘶吼，仿佛包含了成千上万的人临死前的哀嚎。</li>
-<li><span class="en">The cogitator screens flash, and the guttural roar in its depths turns into a frantic shriek that seems to contain the death cries of thousands.</span></li>
-<li><code>Cue_0045</code></li>
-<li>海因里希俯下身子，之后突然退了一步，仿佛遭到电击一般。他的头不自然地朝后仰着，你看到他的嘴唇在颤动……沉思者咆哮着，声音变得越来越响……</li>
-<li><span class="en">Heinrix bends over the keys — and flinches as if from an electric shock. His head snaps back unnaturally, and you see his lips moving... The cogitator lets out a roar that grows louder by the second...</span></li>
 <li>选择 <code>Answer_0040</code></li>
 <li>“这个决定取决于你的良心，海因里希。”</li>
 <li><span class="en">"This decision is on your conscience, Heinrix."</span></li>
@@ -270,6 +264,11 @@
 <li><code>Cue_0042</code></li>
 <li>海因里希又犹豫了一会儿，他的手放在了沉思者的开关上。 / “我准备加快这个过程。这样一来，一切就会尽快结束了。”</li>
 <li><span class="en">Heinrix vacillates for another moment — and his hands come to rest on the cogitator's switches. /  "I will accelerate the process. So that everything is over as soon as possible."</span></li>
+</ul>
+<ul>
+<li>合流：共同后续（以上 2 项） / Rejoin</li>
+<li>后续</li>
+<li>对话块</li>
 <li><code>Cue_0033</code></li>
 <li>沉思者的屏幕闪烁起来，低沉的轰鸣变成了疯狂的嘶吼，仿佛包含了成千上万的人临死前的哀嚎。</li>
 <li><span class="en">The cogitator screens flash, and the guttural roar in its depths turns into a frantic shriek that seems to contain the death cries of thousands.</span></li>
@@ -436,6 +435,27 @@
 <li>选择 <code>Answer_4</code></li>
 <li>“这是什么东西？”</li>
 <li><span class="en">"What is this?"</span></li>
+<li>选择 <code>Answer_0004</code></li>
+<li>“你是谁？”</li>
+<li><span class="en">"Who are you?"</span></li>
+<li>后续</li>
+<li>对话块</li>
+<li><code>Cue_6</code></li>
+<li>“领班……来自部门……部门……好疼……求你了……” / 怪物沉默了一会儿，之后又鼓起勇气，发出了声音。 / “我是三号锅炉的领班……我们……来自底层……” / 最后一句话被呻吟声淹没了。</li>
+<li><span class="en">"Foreman... from sector... sector... Hurts... Mercy..." / The mutant falls silent for a few moments, but then his voice comes back stronger. /  "Foreman from Boiler 3... We're... from the lower... levels..." / The final words are drowned out by a moan.</span></li>
+<li>选择 <code>Answer_0001</code></li>
+<li>[朝他的头部开枪]</li>
+<li><span class="en">[Shoot him in the head]</span></li>
+<li>注：显示条件：UnitHasRangedWeaponEquipped</li>
+<li>后续</li>
+<li>对话块</li>
+<li><code>Cue_0003</code></li>
+<li>肉山爆炸了，变成了一座由肿块、恶臭体液与骨头渣滓组成的喷泉。怪物头上的缺口瞬间闭合，新的脸从血肉之中浮现出来，取代了原本的头颅。怪物的身体抽搐得更快、更加剧烈，仿佛由于恐惧而心跳加速一样。由许许多多人声构成的呻吟，从所有的笼子中响了起来。所有不幸沦为变异怪物的人们，都感受到了这种痛苦。</li>
+<li><span class="en">The flesh explodes in a fountain of lumps, stinking spray, and bone shards. The gaping wound closes in an instant, and a different face emerges from the fleshy depths in place of the lost head. The mutant's body is pulsing faster, harder, as though the abomination's heart rate has spiked with fear. A many-voiced moan rises up from all the other cages at once — the pain was felt by all who share the mutant's horrific fate.</span></li>
+<li>选择 <code>Answer_0008</code></li>
+<li>[离开]</li>
+<li><span class="en">[Move away]</span></li>
+<li>合流：共同后续（Answer_4、Answer_0004、Answer_0008） / Rejoin</li>
 <li>后续</li>
 <li>对话块</li>
 <li><code>Cue_10</code></li>
@@ -488,48 +508,15 @@
 <li>“我不想和你争论了。在我看来，你已经打定主意了。”</li>
 <li><span class="en">"I'm not going to argue with you. It seems to me your mind is already made up."</span></li>
 <li>注：显示条件(Or)：CueSeen；CueSeen</li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_0044</code></li>
-<li>海因里希犹豫了一会儿，之后闭上眼睛，举起一只手。一股仿佛来自另一个世界的寒意将你笼罩其中。笼子里的那团肉突然直立起来，它扯开了粘在一起的嘴唇，疯狂地哀嚎起来。它的尖叫声与周围笼子里传来的嚎叫声与充满痛苦的呻吟声交相呼应着。</li>
-<li><span class="en">Heinrix hesitates for a moment, then closes his eyes and raises one hand. You are enveloped by an otherworldly chill. The mass of flesh in the cage suddenly rears up: the mutant wrenches open its glued-together lips and begins wailing frantically. The shrieking is echoed by a chorus of howls and tortured moans coming from the neighbouring cages.</span></li>
-<li><code>Cue_13</code></li>
-<li>这只变种怪物在你眼前发生了变化。它身上的肿瘤像退潮一样消散，露出了一张由于痛苦而变得扭曲、憔悴不堪的女性的脸。这个女性喘着粗气，伸展着终于可以活动的脖子，高喊起来。 / “骗子！你答应过会杀了我！你答应过会让我解脱！你们每个人都是骗子！每个人都告诉我要心怀希望，说只要这样，痛苦就会消失！接受真理吧，因为真理就是希望！我现在唯一的希望就是从这种痛苦中解脱出来！求求你，让我解脱吧！求求——” / 她脑后的肉团颤抖着，伸出了光滑、肥厚的触手，蒙住了她不住哀嚎的脸，把她拖进了肉里。你感觉耳鼓传来了一阵压力，笼中传来了某个持久不衰，几乎令人无法察觉的声音，这个声音让你心里充满了恐惧与绝望。</li>
-<li><span class="en">The mutant changes before your eyes: the tumours recede like an ebbing tide, revealing an emaciated female face twisted in agony. The woman gasps for air, stretches her now mobile neck, and exclaims, /  "LIAR! You promised to kill me! You promised me deliverance! Every one of you, everyone told me to have hope and the pain would go! Accept the Truth, for that is hope! My only hope is to be freed from this pain! Please make it so! MAKE IT S—" / A lump of flesh behind her head shudders and sends out smooth, fat tentacles that cover her wailing face and drag it into itself. You feel the pressure in your ears: from the cage you hear a steady, almost imperceptible sound that fills you with despair and horror.</span></li>
-<li><code>Cue_0005</code></li>
-<li>“格洛克斯兽的孽种……” / 婕伊低声咒骂了一句，声音都变了。</li>
-<li><span class="en">"Groxseed..." / Jae barely breathes the word, not sounding at all like herself.</span></li>
-<li><code>Cue_14</code></li>
-<li>海因里希叹了口气，放下了手，观察笼子里的生物变成了什么样子。它变成了一团黏糊糊的肉块，这个肉块正在剧烈地颤抖着，失去了所有人类的特征。 / “仅仅是这样吗？垂死之人的哀鸣？不，不仅仅只是这样。它刚刚所说的‘希望’，听起来更像是混沌的谎言，用来在脆弱的心灵中扎根。我相信那些堕落的技术神甫们之前重复过这些话，就像他们心中腐化的回声一样……虽然还不知道终末黎明在酝酿什么阴谋，但虚假的希望应该是计划中的关键部分。这是个线索，虽然微不足道，但依然是个线索。”</li>
-<li><span class="en">With a sigh, Heinrix lowers his hand and looks at what the creature within the cage has become. A wetly gleaming mass of meat and gristle that no longer bears any hint of its human origins, it pulses vigorously. /  "And that's it? The lamentations of dying people? No. Not just that. What it said about hope sounds like a lie of Chaos, which it uses to take root in weak minds. I believe the corrupted Tech-Priests repeated this phrase like an echo of what had been instilled in them... Whatever the Cult of the Final Dawn is planning, false hope is a key component of their plan. It's a lead. A small one, but still a lead."</span></li>
-<li><code>Cue_0046</code></li>
-<li>“看来就这样了。不过，你知道什么事情让我感到不安吗，行商浪人？这里的人实在是太少了，像这种制造工厂的底层，通常都应该住着几百万人才对。剩下的人怎么样了？” / 海因里希摇了摇头。 / “我恐怕不会喜欢这个问题的答案。咱们走吧，该来这里办的事情还没办完呢。”</li>
-<li><span class="en">"That's that, then. But do you know what bothers me, Rogue Trader? The number of people here — there are too few. The lower levels of similar manufactorums are inhabited by millions — what happened to the rest of them?" / Heinrix shakes his head. /  "I know I won't like the answer. Let's go. We still haven't done what we came here to do."</span></li>
-<li><code>Cue_14</code></li>
-<li>海因里希叹了口气，放下了手，观察笼子里的生物变成了什么样子。它变成了一团黏糊糊的肉块，这个肉块正在剧烈地颤抖着，失去了所有人类的特征。 / “仅仅是这样吗？垂死之人的哀鸣？不，不仅仅只是这样。它刚刚所说的‘希望’，听起来更像是混沌的谎言，用来在脆弱的心灵中扎根。我相信那些堕落的技术神甫们之前重复过这些话，就像他们心中腐化的回声一样……虽然还不知道终末黎明在酝酿什么阴谋，但虚假的希望应该是计划中的关键部分。这是个线索，虽然微不足道，但依然是个线索。”</li>
-<li><span class="en">With a sigh, Heinrix lowers his hand and looks at what the creature within the cage has become. A wetly gleaming mass of meat and gristle that no longer bears any hint of its human origins, it pulses vigorously. /  "And that's it? The lamentations of dying people? No. Not just that. What it said about hope sounds like a lie of Chaos, which it uses to take root in weak minds. I believe the corrupted Tech-Priests repeated this phrase like an echo of what had been instilled in them... Whatever the Cult of the Final Dawn is planning, false hope is a key component of their plan. It's a lead. A small one, but still a lead."</span></li>
-<li><code>Cue_0046</code></li>
-<li>“看来就这样了。不过，你知道什么事情让我感到不安吗，行商浪人？这里的人实在是太少了，像这种制造工厂的底层，通常都应该住着几百万人才对。剩下的人怎么样了？” / 海因里希摇了摇头。 / “我恐怕不会喜欢这个问题的答案。咱们走吧，该来这里办的事情还没办完呢。”</li>
-<li><span class="en">"That's that, then. But do you know what bothers me, Rogue Trader? The number of people here — there are too few. The lower levels of similar manufactorums are inhabited by millions — what happened to the rest of them?" / Heinrix shakes his head. /  "I know I won't like the answer. Let's go. We still haven't done what we came here to do."</span></li>
 <li>选择 <code>Answer_0034</code></li>
 <li>“你延长他们的痛苦，到底想得到什么？赶紧让他们从这场噩梦中解脱出来吧！”</li>
 <li><span class="en">"What are you going to achieve by prolonging their suffering? Just release them from this nightmare!"</span></li>
 <li>注：显示条件(Or)：CueSeen；CueSeen</li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_0043</code></li>
-<li>海因里希又犹豫了一会儿，之后俯身检查起了沉思者。 / “每只变异生物身上都连着电缆。我可能并不清楚这些机器的原理，但想提高电压应该并不困难……啊，找到开关了……”</li>
-<li><span class="en">Heinrix wavers for another moment, and then leans over the cogitators. /  "Each mutant has cables attached. I may not know the nature of these machines, but it isn't too difficult to increase the voltage... Ah, this switch here..."</span></li>
-<li><code>Cue_4</code></li>
-<li>你听到噼里啪啦的电流声传来。电线迸发出了蓝色的火花，锁在笼子里的生物毫无生气地瘫在了地上。空气中弥漫着肉被烧焦的刺鼻味道。</li>
-<li><span class="en">You hear the crackle of electricity. The wires glow with blue sparks — and the creatures locked in the cages drop lifelessly to the floor. The sharp tang of burned meat hangs in the air.</span></li>
-<li><code>Cue_0046</code></li>
-<li>“看来就这样了。不过，你知道什么事情让我感到不安吗，行商浪人？这里的人实在是太少了，像这种制造工厂的底层，通常都应该住着几百万人才对。剩下的人怎么样了？” / 海因里希摇了摇头。 / “我恐怕不会喜欢这个问题的答案。咱们走吧，该来这里办的事情还没办完呢。”</li>
-<li><span class="en">"That's that, then. But do you know what bothers me, Rogue Trader? The number of people here — there are too few. The lower levels of similar manufactorums are inhabited by millions — what happened to the rest of them?" / Heinrix shakes his head. /  "I know I won't like the answer. Let's go. We still haven't done what we came here to do."</span></li>
 <li>选择 <code>Answer_0037</code></li>
 <li>“看起来你已经下定决心了，这些人必须从痛苦中解脱。”</li>
 <li><span class="en">"It seems to me your mind is already made up. These people need deliverance from their suffering."</span></li>
 <li>注：显示条件(Or)：CueSeen；CueSeen</li>
+<li>合流：共同后续（以上 2 项） / Rejoin</li>
 <li>后续</li>
 <li>对话块</li>
 <li><code>Cue_0043</code></li>
@@ -545,6 +532,7 @@
 <li>“这些人依然可以为帝国服务。无论换做是谁，都会同意他们的痛苦是个可以接受的代价。”</li>
 <li><span class="en">"These people can still serve the Imperium. Anyone would deem their suffering a fair price to pay."</span></li>
 <li>注：显示条件(Or)：CueSeen；CueSeen</li>
+<li>合流：共同后续（Answer_0036、Answer_0038） / Rejoin</li>
 <li>后续</li>
 <li>对话块</li>
 <li><code>Cue_0044</code></li>
@@ -633,34 +621,6 @@
 <li><code>Cue_0015</code></li>
 <li>“我见过很多这样的东西，行商浪人，其中包括由混沌巫术制造的变异怪物。但最令我恐惧的，并不是这种怪物令人厌恶的肉体，而是隐藏在肉体之下的东西。” / 海因里希皱起了眉。 / “那是饱受折磨的人类灵魂。混沌始终会确保它的受害者保留感受痛苦的能力。”</li>
 <li><span class="en">"I have seen a great deal, Rogue Trader. That includes mutations caused by the sorcery of Chaos. But what frightens me most is not their repulsive form, but what is hiding beneath it." / Heinrix frowns. /  "A human soul in torment. Chaos never forgets to ensure its victims retain the ability to suffer."</span></li>
-<li>选择 <code>Answer_0004</code></li>
-<li>“你是谁？”</li>
-<li><span class="en">"Who are you?"</span></li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_6</code></li>
-<li>“领班……来自部门……部门……好疼……求你了……” / 怪物沉默了一会儿，之后又鼓起勇气，发出了声音。 / “我是三号锅炉的领班……我们……来自底层……” / 最后一句话被呻吟声淹没了。</li>
-<li><span class="en">"Foreman... from sector... sector... Hurts... Mercy..." / The mutant falls silent for a few moments, but then his voice comes back stronger. /  "Foreman from Boiler 3... We're... from the lower... levels..." / The final words are drowned out by a moan.</span></li>
-<li><code>Cue_10</code></li>
-<li>海因里希打量着四周，随后，他的注意力再次集中在了最近的笼中的怪物身上。 / “我想到了某件事情。那个思律机僧提到，那些底层的居民被囚禁在了家里。他告诉我们，其中一部分人被带到了这里，那群邪教徒对那些可怜人做了某些事情……就在他们自己的家中……而现在，那些邪教徒正在研究他们的成果。”</li>
-<li><span class="en">Heinrix takes in his surroundings and once again fixes his attention on the contents of the nearest cage. /  "I'm beginning to have some idea. The Lexmechanic mentioned the inhabitants of the lower levels who had been imprisoned in their homes. He said some of them were brought here. The cultists did something to those poor people... in their own home... and now they are studying the result."</span></li>
-<li>选择 <code>Answer_0001</code></li>
-<li>[朝他的头部开枪]</li>
-<li><span class="en">[Shoot him in the head]</span></li>
-<li>注：显示条件：UnitHasRangedWeaponEquipped</li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_0003</code></li>
-<li>肉山爆炸了，变成了一座由肿块、恶臭体液与骨头渣滓组成的喷泉。怪物头上的缺口瞬间闭合，新的脸从血肉之中浮现出来，取代了原本的头颅。怪物的身体抽搐得更快、更加剧烈，仿佛由于恐惧而心跳加速一样。由许许多多人声构成的呻吟，从所有的笼子中响了起来。所有不幸沦为变异怪物的人们，都感受到了这种痛苦。</li>
-<li><span class="en">The flesh explodes in a fountain of lumps, stinking spray, and bone shards. The gaping wound closes in an instant, and a different face emerges from the fleshy depths in place of the lost head. The mutant's body is pulsing faster, harder, as though the abomination's heart rate has spiked with fear. A many-voiced moan rises up from all the other cages at once — the pain was felt by all who share the mutant's horrific fate.</span></li>
-<li>选择 <code>Answer_0008</code></li>
-<li>[离开]</li>
-<li><span class="en">[Move away]</span></li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_10</code></li>
-<li>海因里希打量着四周，随后，他的注意力再次集中在了最近的笼中的怪物身上。 / “我想到了某件事情。那个思律机僧提到，那些底层的居民被囚禁在了家里。他告诉我们，其中一部分人被带到了这里，那群邪教徒对那些可怜人做了某些事情……就在他们自己的家中……而现在，那些邪教徒正在研究他们的成果。”</li>
-<li><span class="en">Heinrix takes in his surroundings and once again fixes his attention on the contents of the nearest cage. /  "I'm beginning to have some idea. The Lexmechanic mentioned the inhabitants of the lower levels who had been imprisoned in their homes. He said some of them were brought here. The cultists did something to those poor people... in their own home... and now they are studying the result."</span></li>
 <li>选择 <code>Answer_0005</code></li>
 <li>[查看离你最近的笼子]</li>
 <li><span class="en">[Look at the cage closest to you]</span></li>
@@ -787,6 +747,17 @@
 <li>选择 <code>Answer_0026</code></li>
 <li>“能不能断开这台沉思者的连接，把它重新连接到另一台机器上？”</li>
 <li><span class="en">"Can the cogitator be disconnected and reconnected to another machine?"</span></li>
+<li>选择 <code>Answer_0013</code></li>
+<li>“海因里希？你在想什么呢？”</li>
+<li><span class="en">"Heinrix? What are you thinking?"</span></li>
+<li>后续</li>
+<li>对话块</li>
+<li><code>Cue_17</code></li>
+<li>海因里希沉默了几秒钟，他咬紧牙关，没有说话。之后，他用一种沉思的语气，仿佛在大声思考一样，对思律机僧开了口： / “或许可以通过另一台设备来查看这台沉思者中的内容……”</li>
+<li><span class="en">Heinrix does not speak for several seconds, gritting his teeth. Then in a meditative tone, as though he is musing aloud, he addresses the Lexmechanic: /  "There may be a way to retrieve the cogitator's contents via another device..."</span></li>
+</ul>
+<ul>
+<li>合流：共同后续（以上 2 项） / Rejoin</li>
 <li>后续</li>
 <li>对话块</li>
 <li><code>Cue_0013</code></li>
@@ -922,20 +893,6 @@
 <li><code>Cue_13</code></li>
 <li>她又瞥了帕斯卡一眼。 / “……至于你，你马上就把这个人看成了一件东西，不再关心他的死活。”</li>
 <li><span class="en">She glances at Pasqal. /  "...and how swift you are to dismiss them as an object."</span></li>
-<li>选择 <code>Answer_0013</code></li>
-<li>“海因里希？你在想什么呢？”</li>
-<li><span class="en">"Heinrix? What are you thinking?"</span></li>
-<li>后续</li>
-<li>对话块</li>
-<li><code>Cue_17</code></li>
-<li>海因里希沉默了几秒钟，他咬紧牙关，没有说话。之后，他用一种沉思的语气，仿佛在大声思考一样，对思律机僧开了口： / “或许可以通过另一台设备来查看这台沉思者中的内容……”</li>
-<li><span class="en">Heinrix does not speak for several seconds, gritting his teeth. Then in a meditative tone, as though he is musing aloud, he addresses the Lexmechanic: /  "There may be a way to retrieve the cogitator's contents via another device..."</span></li>
-<li><code>Cue_0013</code></li>
-<li>思律机僧摇了摇头，语气中满是责备。 / “这么做会将神圣的机器暴露在废码的污染之下。就算这种想法本身并不算亵渎之举……我的植入物也无法与其他机器兼容，无法与其他机魂连接。这些植入物被制造的目的，就是为了与我的实肉系统互动，从而支配我的强制器单元，并通过抄录器输出数据。我发誓，一旦我脱离险境，我就会立刻进行净化仪式，销毁——”</li>
-<li><span class="en">The Lexmechanic shakes his head in reproach. /  "Even if the very idea of exposing a holy machine to the scrap-code wasn't profane in itself... my augmetics are not universally compatible — they cannot be connected to another machine spirit. They were created to interact within the system of my True Flesh, to innervate my compulsor unit and output data via the inscriber. Once I am safe, I swear that I will immediately perform a cleansing rite and destroy—"</span></li>
-<li><code>Cue_0014</code></li>
-<li>“也就是说，只有一种方法能提取储存在这台沉思者里的数据。”</li>
-<li><span class="en">"In other words, there is only one way to extract the data stored in the cogitator."</span></li>
 <li>注记</li>
 <li>当问题组 <code>Cue_0024</code> 的当前提问轮次结束后，对话还会继续进入以下内容。</li>
 <li><span class="en">After the current round of question set <code>Cue_0024</code> concludes, the dialogue continues into the following content.</span></li>
@@ -1080,18 +1037,6 @@
 <li><code>Cue_6</code></li>
 <li>海因里希扭过了头，挥挥手，他的动作急切而僵硬。 / “这个问题咱们之后再讨论吧，至于现在……”</li>
 <li><span class="en">Heinrix jerks his head and waves away the question, his movements sharp and unnatural. /  "We'll talk about it later. But right now..."</span></li>
-<li><code>Cue_0012</code></li>
-<li>海因里希的目光落在你身上。 / “我必须感谢你，。如果没有你的帮助与合作，我恐怕根本没有办法抵达基亚瓦伽马星深处，了解我的特工的调查与报告背后的真相。我恐怕根本走不到这个地方，也没办法顺利阻止邪教的阴谋。”</li>
-<li><span class="en">Heinrix's eyes settle on you. /  "I must thank you, . Without your help and cooperation, I doubt I would have reached the depths of Kiava Gamma and learned the truth behind my agents' dispatches and reports. I would never have ended up here. And I would never have succeeded in hampering the cult's activities."</span></li>
-<li><code>Cue_9</code></li>
-<li>“尊敬的审讯官，你对冯·瓦兰修斯王朝这个世界的浓厚兴趣已经得到满足了吗？”</li>
-<li><span class="en">"Dare I hope, esteemed Interrogator, that your keen interest in this von Valancius world has been satisfied?"</span></li>
-<li><code>Cue_10</code></li>
-<li>“噢？你指的是，这个世界依然被混沌大敌的腐化控制，所有民众都遭到了异端的感染，制造工厂原本神圣的机器如今已经变成了对抗人类的武器，对吗？如果是这样，那我相当满足，没错。”</li>
-<li><span class="en">"Oh? Apart from the fact that the world is still seized by the Archenemy's corruption, its populace is infected with heresy, and the once sacred machines of its manufactorum have been turned into weapons against Humanity? Quite satisfied, yes."</span></li>
-<li><code>Cue_0021</code></li>
-<li>“我在基亚瓦伽马星的任务已经结束了，是时候完成你来这个工业世界该完成的事情了。我唯一的希望就是：等我们回到船上之后，我希望能与你见个面，谈一谈。” / 海因里希低了下头，示意这场谈话已经结束了。</li>
-<li><span class="en">"My business on Kiava Gamma is concluded. It is time to return to the mission that brought you to the industrial world. The only thing I'll ask of you is an audience when we return to the ship." / Heinrix bows his head to signal that the conversation is over.</span></li>
 <li>选择 <code>Answer_0014</code></li>
 <li>“你做出了正确的选择，那些幸免于难的人可以继续为帝国效力。”</li>
 <li><span class="en">"You did the right thing. The people who survived this disaster will continue to serve the Imperium."</span></li>
@@ -1100,18 +1045,6 @@
 <li><code>Cue_0017</code></li>
 <li>“是啊……如果他们还没有被腐化侵蚀的话。当你日后决定这个世界以及居民们的命运时，我希望你能考虑到这一点——这些可怜人之中，同样包括那些尚未被混沌触及的人。”</li>
 <li><span class="en">"Yes... if they have not been touched by corruption. I hope that when you come to decide the fate of this world and its inhabitants, you consider the fact that these unfortunates also include those who have not been touched by Chaos."</span></li>
-<li><code>Cue_0012</code></li>
-<li>海因里希的目光落在你身上。 / “我必须感谢你，。如果没有你的帮助与合作，我恐怕根本没有办法抵达基亚瓦伽马星深处，了解我的特工的调查与报告背后的真相。我恐怕根本走不到这个地方，也没办法顺利阻止邪教的阴谋。”</li>
-<li><span class="en">Heinrix's eyes settle on you. /  "I must thank you, . Without your help and cooperation, I doubt I would have reached the depths of Kiava Gamma and learned the truth behind my agents' dispatches and reports. I would never have ended up here. And I would never have succeeded in hampering the cult's activities."</span></li>
-<li><code>Cue_9</code></li>
-<li>“尊敬的审讯官，你对冯·瓦兰修斯王朝这个世界的浓厚兴趣已经得到满足了吗？”</li>
-<li><span class="en">"Dare I hope, esteemed Interrogator, that your keen interest in this von Valancius world has been satisfied?"</span></li>
-<li><code>Cue_10</code></li>
-<li>“噢？你指的是，这个世界依然被混沌大敌的腐化控制，所有民众都遭到了异端的感染，制造工厂原本神圣的机器如今已经变成了对抗人类的武器，对吗？如果是这样，那我相当满足，没错。”</li>
-<li><span class="en">"Oh? Apart from the fact that the world is still seized by the Archenemy's corruption, its populace is infected with heresy, and the once sacred machines of its manufactorum have been turned into weapons against Humanity? Quite satisfied, yes."</span></li>
-<li><code>Cue_0021</code></li>
-<li>“我在基亚瓦伽马星的任务已经结束了，是时候完成你来这个工业世界该完成的事情了。我唯一的希望就是：等我们回到船上之后，我希望能与你见个面，谈一谈。” / 海因里希低了下头，示意这场谈话已经结束了。</li>
-<li><span class="en">"My business on Kiava Gamma is concluded. It is time to return to the mission that brought you to the industrial world. The only thing I'll ask of you is an audience when we return to the ship." / Heinrix bows his head to signal that the conversation is over.</span></li>
 <li>选择 <code>Answer_0015</code></li>
 <li>“你的行为太草率了，毕竟那些人反正都完蛋了。他们很可能已经被混沌的腐化感染了。”</li>
 <li><span class="en">"You acted rashly. Those people are doomed anyway — they are probably already infected with the corruption of Chaos."</span></li>
@@ -1120,6 +1053,11 @@
 <li><code>Cue_0018</code></li>
 <li>“或许当我提交报告的时候，大审判官会谴责我的决定，但我愿意为我的行为负责。至于那些幸存者……他们的命运掌握在你的手中，行商浪人。”</li>
 <li><span class="en">"Perhaps the Lord Inquisitor will condemn me when I present my report. But I am prepared to account for my actions. As for the survivors... their fate is in your hands, Rogue Trader."</span></li>
+</ul>
+<ul>
+<li>合流：共同后续（以上 3 项） / Rejoin</li>
+<li>后续</li>
+<li>对话块</li>
 <li><code>Cue_0012</code></li>
 <li>海因里希的目光落在你身上。 / “我必须感谢你，。如果没有你的帮助与合作，我恐怕根本没有办法抵达基亚瓦伽马星深处，了解我的特工的调查与报告背后的真相。我恐怕根本走不到这个地方，也没办法顺利阻止邪教的阴谋。”</li>
 <li><span class="en">Heinrix's eyes settle on you. /  "I must thank you, . Without your help and cooperation, I doubt I would have reached the depths of Kiava Gamma and learned the truth behind my agents' dispatches and reports. I would never have ended up here. And I would never have succeeded in hampering the cult's activities."</span></li>
