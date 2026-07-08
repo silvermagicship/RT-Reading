@@ -299,6 +299,49 @@ p + p { margin-top: 1.22em; }
 .choice-marker { list-style: none; margin-left: -1.1rem; color: var(--accent); font-weight: 800; }
 ul:has(.choice-marker) { margin: .25rem 0 .2rem; padding-left: 1.1rem; }
 ul:has(.choice-marker) + p { margin-top: .28rem; margin-left: 1.35rem; padding-left: .82rem; border-left: 2px solid #ead9ca; }
+.card-details {
+  margin: .8rem 0 1rem;
+  padding: .55rem .75rem;
+  border: 1px solid #ead9ca;
+  border-radius: 8px;
+  background: #fbf5ed;
+}
+.card-details summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 800;
+}
+.card-details[open] summary {
+  margin-bottom: .45rem;
+}
+.quick-jumps {
+  position: fixed;
+  right: max(.8rem, calc((100vw - 820px) / 2 - 4.2rem));
+  top: 50%;
+  z-index: 30;
+  display: grid;
+  gap: .45rem;
+  transform: translateY(-50%);
+}
+.quick-jumps a {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 253, 248, .92);
+  color: var(--accent);
+  box-shadow: 0 8px 22px rgba(44, 31, 20, .12);
+  text-decoration: none;
+  font: 800 1.02rem/1 "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+.quick-jumps a:hover,
+.quick-jumps a:focus-visible {
+  background: #eef5f1;
+  outline: 2px solid rgba(47, 104, 97, .26);
+  outline-offset: 2px;
+}
 .en, .en-inline, .en-label { font-family: "Segoe UI", "Inter", "Helvetica Neue", Arial, sans-serif; font-weight: 400; }
 .en { display: inline-block; margin-top: .18rem; color: #625950; font-size: calc(.94em * var(--reader-scale, 1)); line-height: calc(var(--reader-leading, 1.92) - .24); }
 .en em { font-family: inherit; font-weight: 450; color: #5d544d; }
@@ -419,6 +462,8 @@ html.night-mode .entry-card,
 html.night-mode .toc,
 html.night-mode .search-box { background: var(--paper); }
 html.night-mode .choice-heading { background: #2a211e; }
+html.night-mode .card-details,
+html.night-mode .quick-jumps a { background: #211d1a; }
 html.night-mode .zh-dialogue { color: #c6b8aa; }
 html.night-mode .en { color: #ad9f92; }
 .reader-tools { display: none; }
@@ -441,4 +486,15 @@ html.night-mode .en { color: #ad9f92; }
   em { font-weight: 470; }
   .zh-dialogue { font-weight: 390; color: #6c6159; }
   .search-page-form { flex-direction: column; }
+  .quick-jumps {
+    right: .55rem;
+    top: auto;
+    bottom: 1rem;
+    transform: none;
+    gap: .35rem;
+  }
+  .quick-jumps a {
+    width: 38px;
+    height: 38px;
+  }
 }
